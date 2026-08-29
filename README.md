@@ -25,6 +25,7 @@ numbers are committed unless they were produced by an actual run.
 
 ```text
 ai-infra-lab/
+├── scripts/        # Repeatable setup helpers for fresh GPU Pods
 ├── training/       # Single- and multi-GPU training code
 ├── serving/        # vLLM server and load generator
 ├── distributed/    # DDP and communication experiments
@@ -36,6 +37,19 @@ ai-infra-lab/
 ├── cuda_smoke_test.py
 └── README.md
 ```
+
+### Fresh Pod GitHub setup
+
+On a new Debian/Ubuntu Pod, install GitHub CLI and configure HTTPS Git
+authentication with:
+
+```bash
+bash scripts/bootstrap_pod.sh
+```
+
+The script is safe to rerun. It installs `gh` only when missing and starts a
+GitHub device login only when the Pod is not already authenticated. Credentials
+remain outside the repository and must not be committed.
 
 ## Stage 0: run it
 
