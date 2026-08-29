@@ -82,3 +82,15 @@ The JSON reports record per-step loss and latency, tokens per second, peak
 PyTorch GPU memory, and checkpoint reload verification. See
 [experiments/stage1-single-gpu.md](experiments/stage1-single-gpu.md) for the
 fixed experiment definition and Pod setup.
+
+Compare the original BF16 weights with a saved continued-training checkpoint
+on CPU:
+
+```bash
+python training/compare_weights.py \
+  --trained-model outputs/weight_comparison_checkpoint \
+  --output results/weight_comparison.json
+```
+
+The report includes the global changed-element fraction and weight deltas,
+plus per-tensor statistics ranked by relative L2 change.
