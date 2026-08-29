@@ -17,8 +17,9 @@ completeness.
   candidate**, or **theory-only / out of scope**. The default is to continue
   BFS without expanding the stack.
 
-Only **Stage 0 — Environment and Benchmark Harness** is implemented so far.
-No benchmark numbers are committed unless they were produced by an actual run.
+Stages 0 and 1 are implemented: the environment/benchmark harness and a
+single-GPU training baseline. No benchmark numbers are committed unless they
+were produced by an actual run.
 
 ## Repository layout
 
@@ -62,3 +63,22 @@ if the allocation does not fit on the GPU.
 Copy [experiments/experiment-template.md](experiments/experiment-template.md)
 for each experiment. Keep exact commands/configuration in the experiment note
 and save raw CSV/JSON data under `results/`.
+
+## Stage 1: single-GPU training baseline
+
+Run the TinyLlama/TinyStories baseline twice on one visible GPU:
+
+```bash
+CUDA_VISIBLE_DEVICES=0 python training/single_gpu_train.py \
+  --batch-size 1 --checkpoint-dir outputs/stage1_bs1_checkpoint \
+  --output results/stage1_bs1.json
+
+CUDA_VISIBLE_DEVICES=0 python training/single_gpu_train.py \
+  --batch-size 2 --checkpoint-dir outputs/stage1_bs2_checkpoint \
+  --output results/stage1_bs2.json
+```
+
+The JSON reports record per-step loss and latency, tokens per second, peak
+PyTorch GPU memory, and checkpoint reload verification. See
+[experiments/stage1-single-gpu.md](experiments/stage1-single-gpu.md) for the
+fixed experiment definition and Pod setup.
