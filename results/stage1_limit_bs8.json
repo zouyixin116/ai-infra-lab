@@ -1,0 +1,36 @@
+{
+  "captured_at_utc": "2026-08-29T08:12:21.808013+00:00",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "pytorch_version": "2.8.0+cu128",
+  "model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "dataset": "roneneldan/TinyStories",
+  "dataset_samples": 256,
+  "parameter_count": 1100048384,
+  "precision": "bfloat16",
+  "batch_size": 8,
+  "sequence_length": 256,
+  "steps": 2,
+  "warmup_steps": 1,
+  "learning_rate": 2e-05,
+  "seed": 42,
+  "metrics": {
+    "loss_per_step": [
+      1.609681,
+      1.569437
+    ],
+    "step_time_ms": [
+      164.489,
+      164.074
+    ],
+    "average_step_time_ms": 164.281,
+    "tokens_processed": 3605,
+    "tokens_per_second": 10972.021,
+    "peak_pytorch_memory_bytes": 11893725184
+  },
+  "checkpoint": {
+    "path": "outputs/stage1_limit_checkpoint",
+    "optimizer_state_saved": true,
+    "reload_loss": 1.391454,
+    "reload_verified": true
+  }
+}
