@@ -18,8 +18,9 @@ completeness.
   BFS without expanding the stack.
 
 Stages 0 through 2 are implemented: the environment/benchmark harness, a
-single-GPU training baseline, and a multi-GPU DDP baseline. No benchmark
-numbers are committed unless they were produced by an actual run.
+single-GPU training baseline, and a multi-GPU DDP baseline. Stage 3, a vLLM
+serving baseline, is in progress. No benchmark numbers are committed unless
+they were produced by an actual run.
 
 ## Repository layout
 
@@ -134,3 +135,26 @@ checks that all ranks have identical parameter fingerprints before rank 0
 saves and reloads the checkpoint. See
 [experiments/stage2-ddp.md](experiments/stage2-ddp.md) for the fixed experiment
 definition and result convention.
+
+## Stage 3: vLLM serving baseline
+
+Start a single-GPU OpenAI-compatible server:
+
+```bash
+CUDA_VISIBLE_DEVICES=0 vllm serve TinyLlama/TinyLlama-1.1B-Chat-v1.0 \
+  --dtype bfloat16 --seed 42 --host 0.0.0.0 --port 8000
+```
+
+In another shell, establish the serial streaming baseline:
+
+```bash
+python serving/load_test.py --concurrency 1 \
+  --output results/stage3_c1.json
+```
+
+The JSON reports streaming time to first token, end-to-end latency, request
+throughput, output-token throughput, success rate, and individual request
+measurements. First verify service correctness and understand these metrics at
+concurrency 1. Concurrency experiments come only after that baseline has real
+GPU evidence. See [experiments/stage3-vllm-serving.md](experiments/stage3-vllm-serving.md)
+for the current experiment definition and evidence boundary.
