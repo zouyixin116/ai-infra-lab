@@ -17,9 +17,9 @@ completeness.
   candidate**, or **theory-only / out of scope**. The default is to continue
   BFS without expanding the stack.
 
-Stages 0 and 1 are implemented: the environment/benchmark harness and a
-single-GPU training baseline. No benchmark numbers are committed unless they
-were produced by an actual run.
+Stages 0 through 2 are implemented: the environment/benchmark harness, a
+single-GPU training baseline, and a multi-GPU DDP baseline. No benchmark
+numbers are committed unless they were produced by an actual run.
 
 ## Repository layout
 
@@ -94,3 +94,29 @@ python training/compare_weights.py \
 
 The report includes the global changed-element fraction and weight deltas,
 plus per-tensor statistics ranked by relative L2 change.
+
+## Stage 2: multi-GPU DDP baseline
+
+Before training, verify process-to-GPU binding and NCCL communication:
+
+```bash
+torchrun --standalone --nproc-per-node=2 distributed/ddp_smoke.py
+```
+
+Both ranks should report an all-reduce result of `3.0` for a two-process run.
+Then run one process per GPU on a host with two identical CUDA GPUs:
+
+```bash
+CUDA_VISIBLE_DEVICES=0,1 torchrun --standalone --nproc-per-node=2 \
+  distributed/ddp_train.py \
+  --batch-size 2 \
+  --checkpoint-dir outputs/stage2_ddp_checkpoint \
+  --output results/stage2_ddp.json
+```
+
+The rank-0 JSON reports loss averaged across ranks, global token throughput,
+slowest-rank elapsed time, and maximum per-rank peak memory. The run also
+checks that all ranks have identical parameter fingerprints before rank 0
+saves and reloads the checkpoint. See
+[experiments/stage2-ddp.md](experiments/stage2-ddp.md) for the fixed experiment
+definition and result convention.
