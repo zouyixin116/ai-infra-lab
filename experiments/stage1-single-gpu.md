@@ -50,3 +50,32 @@ runs a finite-loss forward pass. Success is `checkpoint.reload_verified: true`.
 
 Raw GPU results belong in `results/stage1_bs1.json` and
 `results/stage1_bs2.json`. Do not commit invented or non-4090 measurements.
+
+## Results
+
+Both runs were measured on an RTX 4090 with PyTorch 2.8.0+cu128. Both saved
+the optimizer state and passed the model checkpoint reload check.
+
+| Batch size | Mean loss | Mean step time | Tokens/s | Peak memory |
+|---:|---:|---:|---:|---:|
+| 1 | 1.5843 | 125.615 ms | 1,725.914 | 10.292 GiB |
+| 2 | 1.5472 | 125.728 ms | 3,420.880 | 10.318 GiB |
+
+## Explanation and conclusion
+
+Increasing batch size from 1 to 2 increased measured token throughput by
+98.2%, while mean step time increased by only 0.09%. Peak allocated memory
+rose by 26.3 MiB (0.25%). For this short, padded workload, batch size 2 kept
+the GPU busier without a material latency or allocator-memory penalty.
+
+Loss varied from batch to batch because each step used different stories.
+Mean measured loss was 1.5843 for batch size 1 and 1.5472 for batch size 2;
+these 20-step runs are too short to interpret that difference as a model
+quality result.
+
+## Limitations / follow-up
+
+Token counts exclude padding, so the two runs processed 4,336 and 8,602 real
+tokens rather than exact multiples of the padded sequence length. The sample
+is intentionally small and each configuration was run once; the results are
+a Stage 1 baseline, not a variance study or hyperparameter comparison.
