@@ -1,0 +1,1079 @@
+[I829 20:11:44.684441410 debug.cpp:50] [c10d] The debug level is set to DETAIL.
+W0829 20:11:45.192000 6463 torch/distributed/run.py:774] 
+W0829 20:11:45.192000 6463 torch/distributed/run.py:774] *****************************************
+W0829 20:11:45.192000 6463 torch/distributed/run.py:774] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0829 20:11:45.192000 6463 torch/distributed/run.py:774] *****************************************
+[I829 20:11:45.544108213 TCPStore.cpp:271] [c10d - debug] The server has started on port = 46715.
+[I829 20:11:45.544181070 socket.cpp:776] [c10d - debug] The client socket will attempt to connect to an IPv6 address of (localhost, 46715).
+[I829 20:11:45.544189025 TCPStoreLibUvBackend.cpp:1263] [c10d - debug] Uv main loop running
+[I829 20:11:45.544624104 socket.cpp:850] [c10d - trace] The client socket is attempting to connect to [localhost]:46715.
+[I829 20:11:45.544807278 socket.cpp:946] [c10d] The client socket has connected to [localhost]:46715 on SocketImpl(fd=11, addr=[localhost]:60354, remote=[localhost]:46715).
+[I829 20:11:45.544859847 TCPStore.cpp:316] [c10d - debug] TCP client connected to host localhost:46715
+[I829 20:11:45.545156325 TCPStoreLibUvBackend.cpp:831] [c10d - trace] validate magic:1015412686 address:[localhost]:60354
+[I829 20:11:45.545174670 TCPStoreLibUvBackend.cpp:844] [c10d - trace] ping nonce:6463 address:[localhost]:60354
+[I829 20:11:45.545285549 TCPStoreLibUvBackend.cpp:880] [c10d - trace] compareAndSet key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:11:45.646868646 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:11:45.646948446 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:11:45.651341844 TCPStoreLibUvBackend.cpp:880] [c10d - trace] compareAndSet key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:11:45.655985463 TCPStore.cpp:271] [c10d - debug] The server has started on port = 34067.
+[I829 20:11:45.656067327 socket.cpp:776] [c10d - debug] The client socket will attempt to connect to an IPv6 address of (b361218e73ad, 34067).
+[I829 20:11:45.656090891 TCPStoreLibUvBackend.cpp:1263] [c10d - debug] Uv main loop running
+[I829 20:11:45.656161745 socket.cpp:850] [c10d - trace] The client socket is attempting to connect to [b361218e73ad]:34067.
+[I829 20:11:45.656409862 socket.cpp:946] [c10d] The client socket has connected to [b361218e73ad]:34067 on SocketImpl(fd=19, addr=[b361218e73ad]:40526, remote=[b361218e73ad]:34067).
+[I829 20:11:45.656511483 TCPStore.cpp:316] [c10d - debug] TCP client connected to host b361218e73ad:34067
+[I829 20:11:45.656637650 TCPStoreLibUvBackend.cpp:831] [c10d - trace] validate magic:1015412686 address:[b361218e73ad]:40526
+[I829 20:11:45.656653480 TCPStoreLibUvBackend.cpp:844] [c10d - trace] ping nonce:6463 address:[b361218e73ad]:40526
+[I829 20:11:45.656809554 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7.0/MASTER_ADDR address:[localhost]:60354
+[I829 20:11:45.656840202 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7.0/MASTER_PORT address:[localhost]:60354
+[I829 20:11:45.656854549 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7.0/MASTER_ADDR address:[localhost]:60354
+[I829 20:11:45.656922296 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7.0/MASTER_ADDR address:[localhost]:60354
+[I829 20:11:45.656995333 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7.0/MASTER_PORT address:[localhost]:60354
+[I829 20:11:45.657081926 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7.0/MASTER_PORT address:[localhost]:60354
+[I829 20:11:45.657670234 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7.0/torchelastic/role_info/0 address:[localhost]:60354
+[I829 20:11:45.657715098 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7.0/torchelastic/role_info/0 address:[localhost]:60354
+[I829 20:11:45.657774971 TCPStoreLibUvBackend.cpp:1050] [c10d - trace] multi_get key_count:1 address:[localhost]:60354
+[I829 20:11:45.657902330 TCPStoreLibUvBackend.cpp:1081] [c10d - trace] multi_set key_count:1 address:[localhost]:60354
+[I829 20:11:45.658053254 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7.0/torchelastic/assigned_ranks/0 address:[localhost]:60354
+[I829 20:11:45.658121673 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7.0/torchelastic/assigned_ranks/0 address:[localhost]:60354
+[I829 20:11:46.395397821 debug.cpp:50] [c10d] The debug level is set to DETAIL.
+[I829 20:11:46.592323022 debug.cpp:50] [c10d] The debug level is set to DETAIL.
+[I829 20:11:46.666657821 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:11:46.666829574 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:11:47.668981488 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:11:47.669268929 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:11:48.671447623 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:11:48.671608856 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:11:49.673585299 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:11:49.673743096 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:11:50.656820143 TCPStoreLibUvBackend.cpp:880] [c10d - trace] compareAndSet key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:11:50.740247133 socket.cpp:776] [c10d - debug] The client socket will attempt to connect to an IPv6 address of (b361218e73ad, 34067).
+[I829 20:11:50.740658828 socket.cpp:850] [c10d - trace] The client socket is attempting to connect to [b361218e73ad]:34067.
+[I829 20:11:50.740900072 socket.cpp:946] [c10d] The client socket has connected to [b361218e73ad]:34067 on SocketImpl(fd=48, addr=[b361218e73ad]:40532, remote=[b361218e73ad]:34067).
+[I829 20:11:50.740967308 TCPStore.cpp:316] [c10d - debug] TCP client connected to host b361218e73ad:34067
+[I829 20:11:50.741210345 TCPStoreLibUvBackend.cpp:831] [c10d - trace] validate magic:1015412686 address:[b361218e73ad]:40532
+[I829 20:11:50.741234631 TCPStoreLibUvBackend.cpp:844] [c10d - trace] ping nonce:6532 address:[b361218e73ad]:40532
+[I829 20:11:50.741314431 TCPStoreLibUvBackend.cpp:913] [c10d - trace] add key:init/ val:1 address:[b361218e73ad]:40532
+[I829 20:11:50.741561346 ProcessGroupNCCL.cpp:1685] [PG ID 0 PG GUID 0 Rank 1] HeartbeatMonitor environments: TORCH_NCCL_ENABLE_MONITORING (Whether to kill program when no watchdog heartbeat detected): 1, TORCH_NCCL_DUMP_ON_TIMEOUT: 1, TORCH_NCCL_WAIT_TIMEOUT_DUMP_MILSEC: 15000, TORCH_NCCL_HEARTBEAT_TIMEOUT_SEC: 480, TORCH_NCCL_COORD_CHECK_MILSEC: 1000, TORCH_NCCL_LOG_CPP_STACK_ON_UNCLEAN_SHUTDOWN: 1
+[I829 20:11:50.741572577 ProcessGroupNCCL.cpp:2012] [PG ID 0 PG GUID 0 Rank 1] PGNCCL Watchdog environments: TORCH_NCCL_RETHROW_CUDA_ERRORS: 1, TORCH_NCCL_PROPAGATE_ERROR: 0, TORCH_NCCL_DESYNC_DEBUG: 1
+[I829 20:11:50.741844399 ProcessGroupNCCL.cpp:1035] [PG ID 0 PG GUID 0 Rank 1] ProcessGroupNCCL initialization options: size: 2, global rank: 1, TIMEOUT(ms): 600000, USE_HIGH_PRIORITY_STREAM: 0, SPLIT_FROM: 0, SPLIT_COLOR: -2, PG Name: 0
+[I829 20:11:50.741849428 ProcessGroupNCCL.cpp:1044] [PG ID 0 PG GUID 0 Rank 1] ProcessGroupNCCL environments: NCCL version: 2.27.3, TORCH_NCCL_ASYNC_ERROR_HANDLING: 1, TORCH_NCCL_ENABLE_TIMING: 1, TORCH_NCCL_BLOCKING_WAIT: 0, TORCH_DISTRIBUTED_DEBUG: DETAIL, TORCH_NCCL_USE_TENSOR_REGISTER_ALLOCATOR_HOOK: 0, TORCH_NCCL_TRACE_BUFFER_SIZE: 2000, TORCH_NCCL_NAN_CHECK: 0, TORCH_NCCL_CUDA_EVENT_CACHE: 1
+[I829 20:11:50.748216490 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//pg_wrapper:0/0/1 address:[b361218e73ad]:40532
+[I829 20:11:50.748239003 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/default_pg/0//cuda//pg_wrapper:0/0/0 address:[b361218e73ad]:40532
+[I829 20:11:50.827615931 socket.cpp:776] [c10d - debug] The client socket will attempt to connect to an IPv6 address of (b361218e73ad, 34067).
+[I829 20:11:50.828051460 socket.cpp:850] [c10d - trace] The client socket is attempting to connect to [b361218e73ad]:34067.
+[I829 20:11:50.828302102 socket.cpp:946] [c10d] The client socket has connected to [b361218e73ad]:34067 on SocketImpl(fd=48, addr=[b361218e73ad]:40542, remote=[b361218e73ad]:34067).
+[I829 20:11:50.828377264 TCPStore.cpp:316] [c10d - debug] TCP client connected to host b361218e73ad:34067
+[I829 20:11:50.828533097 TCPStoreLibUvBackend.cpp:831] [c10d - trace] validate magic:1015412686 address:[b361218e73ad]:40542
+[I829 20:11:50.828549017 TCPStoreLibUvBackend.cpp:844] [c10d - trace] ping nonce:6531 address:[b361218e73ad]:40542
+[I829 20:11:50.828626142 TCPStoreLibUvBackend.cpp:913] [c10d - trace] add key:init/ val:1 address:[b361218e73ad]:40542
+[I829 20:11:50.828885330 ProcessGroupNCCL.cpp:1685] [PG ID 0 PG GUID 0 Rank 0] HeartbeatMonitor environments: TORCH_NCCL_ENABLE_MONITORING (Whether to kill program when no watchdog heartbeat detected): 1, TORCH_NCCL_DUMP_ON_TIMEOUT: 1, TORCH_NCCL_WAIT_TIMEOUT_DUMP_MILSEC: 15000, TORCH_NCCL_HEARTBEAT_TIMEOUT_SEC: 480, TORCH_NCCL_COORD_CHECK_MILSEC: 1000, TORCH_NCCL_LOG_CPP_STACK_ON_UNCLEAN_SHUTDOWN: 1
+[I829 20:11:50.828894667 ProcessGroupNCCL.cpp:2012] [PG ID 0 PG GUID 0 Rank 0] PGNCCL Watchdog environments: TORCH_NCCL_RETHROW_CUDA_ERRORS: 1, TORCH_NCCL_PROPAGATE_ERROR: 0, TORCH_NCCL_DESYNC_DEBUG: 1
+[I829 20:11:50.829180265 ProcessGroupNCCL.cpp:1035] [PG ID 0 PG GUID 0 Rank 0] ProcessGroupNCCL initialization options: size: 2, global rank: 0, TIMEOUT(ms): 600000, USE_HIGH_PRIORITY_STREAM: 0, SPLIT_FROM: 0, SPLIT_COLOR: -2, PG Name: 0
+[I829 20:11:50.829187659 ProcessGroupNCCL.cpp:1044] [PG ID 0 PG GUID 0 Rank 0] ProcessGroupNCCL environments: NCCL version: 2.27.3, TORCH_NCCL_ASYNC_ERROR_HANDLING: 1, TORCH_NCCL_ENABLE_TIMING: 1, TORCH_NCCL_BLOCKING_WAIT: 0, TORCH_DISTRIBUTED_DEBUG: DETAIL, TORCH_NCCL_USE_TENSOR_REGISTER_ALLOCATOR_HOOK: 0, TORCH_NCCL_TRACE_BUFFER_SIZE: 2000, TORCH_NCCL_NAN_CHECK: 0, TORCH_NCCL_CUDA_EVENT_CACHE: 1
+[I829 20:11:50.834149326 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//pg_wrapper:0/0/0 address:[b361218e73ad]:40542
+[I829 20:11:50.834204089 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/default_pg/0//cuda//pg_wrapper:0/0/0 address:[b361218e73ad]:40542
+[I829 20:11:50.834288177 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/default_pg/0//cuda//pg_wrapper:0/0/0 address:[b361218e73ad]:40532
+[I829 20:11:50.834368919 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/default_pg/0//cuda//pg_wrapper:0/0/0 address:[b361218e73ad]:40532
+[I829 20:11:50.834406690 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/default_pg/0//cuda//pg_wrapper:0/0/0 address:[b361218e73ad]:40542
+[I829 20:11:50.834463788 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/default_pg/0//cuda//pg_wrapper:0/0/1 address:[b361218e73ad]:40532
+[I829 20:11:50.834501008 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/default_pg/0//cuda//pg_wrapper:0/0/0 address:[b361218e73ad]:40542
+[I829 20:11:50.834535913 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/default_pg/0//cuda//pg_wrapper:0/0/1 address:[b361218e73ad]:40532
+[I829 20:11:50.834609091 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/default_pg/0//cuda//pg_wrapper:0/0/1 address:[b361218e73ad]:40542
+[I829 20:11:50.834644708 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/default_pg/0//cuda//pg_wrapper:0/0/1 address:[b361218e73ad]:40532
+[I829 20:11:50.834686056 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/default_pg/0//cuda//pg_wrapper:0/0/1 address:[b361218e73ad]:40542
+[I829 20:11:50.834758292 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/default_pg/0//cuda//pg_wrapper:0/0/1 address:[b361218e73ad]:40542
+[Gloo] Rank 0 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[Gloo] Rank 1 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[I829 20:11:51.677591336 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:11:51.677767107 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:11:51.742825198 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:11:51.830085422 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+[I829 20:11:52.679730535 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:11:52.679902008 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:11:52.743184959 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:11:52.830441175 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+[I829 20:11:53.681895924 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:11:53.682218461 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:11:53.743510426 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:11:53.830789745 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+[I829 20:11:54.684240240 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:11:54.684356058 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:11:54.743822907 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:11:54.831163753 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+[I829 20:11:55.662133491 TCPStoreLibUvBackend.cpp:880] [c10d - trace] compareAndSet key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+Map:   0%|          | 0/16 [00:00<?, ? examples/s]Map:   0%|          | 0/16 [00:00<?, ? examples/s]Map: 100%|██████████| 16/16 [00:00<00:00, 388.13 examples/s]
+Map: 100%|██████████| 16/16 [00:00<00:00, 303.13 examples/s]
+[I829 20:11:55.744153684 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:11:55.831684296 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights: 100%|██████████| 201/201 [00:00<00:00, 3926.41it/s]
+[I829 20:11:56.688111904 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:11:56.688362154 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:11:56.744923386 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s][I829 20:11:56.832302283 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+Loading weights:  25%|██▍       | 50/201 [00:00<00:00, 437.06it/s]Loading weights:  47%|████▋     | 94/201 [00:00<00:00, 435.42it/s]Loading weights:  69%|██████▊   | 138/201 [00:00<00:00, 429.91it/s]Loading weights:  90%|█████████ | 181/201 [00:00<00:00, 394.52it/s]Loading weights: 100%|██████████| 201/201 [00:00<00:00, 420.58it/s]
+[I829 20:11:57.690576756 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:11:57.690788424 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:11:57.745331408 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:11:57.832734390 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+[I829 20:11:58.692893249 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:11:58.693204956 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:11:58.745756011 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:11:58.833056580 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+[I829 20:11:59.695215634 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:11:59.695425488 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:11:59.746188919 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:11:59.833370525 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+[I829 20:12:00.666993226 TCPStoreLibUvBackend.cpp:880] [c10d - trace] compareAndSet key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:00.746546005 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:12:00.833643673 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+[I829 20:12:01.699116743 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:01.699287935 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:01.746942806 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:12:01.833981192 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+[I829 20:12:02.700862051 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:02.700978340 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:02.747429726 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:12:02.834493530 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+[I829 20:12:03.702890843 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:03.703232806 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:03.747813001 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:12:03.834885571 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+[I829 20:12:04.705209781 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:04.705419034 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:04.748251220 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:12:04.835247947 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+[I829 20:12:05.671971864 TCPStoreLibUvBackend.cpp:880] [c10d - trace] compareAndSet key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:05.748603056 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:12:05.835590436 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+[I829 20:12:06.709243309 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:06.709429640 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:06.748951926 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:12:06.835908238 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+[I829 20:12:07.711540536 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:07.711757734 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:07.749347264 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:12:07.836232141 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+[I829 20:12:08.713729820 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:08.713939584 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:08.749719578 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:12:08.836545364 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+[I829 20:12:09.715789820 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:09.715943590 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:09.750061546 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:12:09.836930513 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+[rank1]:[I829 20:12:10.423887097 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=0, OpType=ALLGATHER, TensorShape=[1], TensorDtypes=Long, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:10.472141206 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=0, OpType=ALLGATHER, TensorShape=[1], TensorDtypes=Long, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:10.474931457 ProcessGroupNCCL.cpp:1111] [PG ID 0 PG GUID 0 Rank 1] Using non-blocking mode: 0
+[rank0]:[I829 20:12:10.474942067 ProcessGroupNCCL.cpp:1111] [PG ID 0 PG GUID 0 Rank 0] Using non-blocking mode: 0
+[I829 20:12:10.475384399 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/default_pg/0//cuda//0 address:[b361218e73ad]:40532
+b361218e73ad:6531:6531 [0] NCCL INFO Bootstrap: Using eth0:10.128.3.2<0>
+[rank0]:[I829 20:12:10.480175375 ProcessGroupNCCL.cpp:3098] [PG ID 0 PG GUID 0 Rank 0] ProcessGroupNCCL broadcast unique ID through store took 0.054122 ms
+[rank0]:[I829 20:12:10.480192708 NCCLUtils.cpp:75] Rank 0: creating NCCL communicator with mode: blocking
+b361218e73ad:6531:6531 [0] NCCL INFO cudaDriverVersion 13000
+[I829 20:12:10.480264292 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//0 address:[b361218e73ad]:40542
+[I829 20:12:10.480544239 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/default_pg/0//cuda//0 address:[b361218e73ad]:40532
+[rank1]:[I829 20:12:10.480711915 ProcessGroupNCCL.cpp:3098] [PG ID 0 PG GUID 0 Rank 1] ProcessGroupNCCL broadcast unique ID through store took 5.75551 ms
+[rank1]:[I829 20:12:10.480767389 NCCLUtils.cpp:75] Rank 1: creating NCCL communicator with mode: blocking
+b361218e73ad:6531:6531 [0] NCCL INFO NCCL version 2.27.3+cuda12.9
+b361218e73ad:6531:6531 [0] NCCL INFO Comm config Blocking set to 1
+b361218e73ad:6532:6532 [1] NCCL INFO cudaDriverVersion 13000
+b361218e73ad:6532:6532 [1] NCCL INFO Bootstrap: Using eth0:10.128.3.2<0>
+b361218e73ad:6532:6532 [1] NCCL INFO NCCL version 2.27.3+cuda12.9
+b361218e73ad:6532:6532 [1] NCCL INFO Comm config Blocking set to 1
+b361218e73ad:6531:6782 [0] NCCL INFO NET/Plugin: Could not find: libnccl-net.so. 
+b361218e73ad:6531:6782 [0] NCCL INFO Failed to open libibverbs.so[.1]
+b361218e73ad:6531:6782 [0] NCCL INFO NET/Socket : Using [0]eth0:10.128.3.2<0>
+b361218e73ad:6531:6782 [0] NCCL INFO Initialized NET plugin Socket
+b361218e73ad:6531:6782 [0] NCCL INFO Assigned NET plugin Socket to comm
+b361218e73ad:6531:6782 [0] NCCL INFO Using network Socket
+b361218e73ad:6531:6782 [0] NCCL INFO ncclCommInitRankConfig comm 0x2ae20460 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId a1000 commId 0xfbe07b8332a9cc6d - Init START
+b361218e73ad:6532:6783 [1] NCCL INFO NET/Plugin: Could not find: libnccl-net.so. 
+b361218e73ad:6532:6783 [1] NCCL INFO Failed to open libibverbs.so[.1]
+b361218e73ad:6532:6783 [1] NCCL INFO NET/Socket : Using [0]eth0:10.128.3.2<0>
+b361218e73ad:6532:6783 [1] NCCL INFO Initialized NET plugin Socket
+b361218e73ad:6532:6783 [1] NCCL INFO Assigned NET plugin Socket to comm
+b361218e73ad:6532:6783 [1] NCCL INFO Using network Socket
+b361218e73ad:6532:6783 [1] NCCL INFO ncclCommInitRankConfig comm 0x2542e0f0 rank 1 nranks 2 cudaDev 1 nvmlDev 1 busId c1000 commId 0xfbe07b8332a9cc6d - Init START
+b361218e73ad:6532:6783 [1] NCCL INFO RAS client listening socket at ::1<28028>
+b361218e73ad:6531:6782 [0] NCCL INFO RAS client listening socket at ::1<28028>
+[I829 20:12:10.677019282 TCPStoreLibUvBackend.cpp:880] [c10d - trace] compareAndSet key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+b361218e73ad:6532:6783 [1] NCCL INFO Bootstrap timings total 0.020078 (create 0.000067, send 0.000238, recv 0.000623, ring 0.000318, delay 0.000001)
+b361218e73ad:6531:6782 [0] NCCL INFO Bootstrap timings total 0.029697 (create 0.000069, send 0.000267, recv 0.009968, ring 0.000055, delay 0.000001)
+b361218e73ad:6531:6782 [0] NCCL INFO P2P is disabled between connected GPUs 1 and 0. You can repress this message with NCCL_IGNORE_DISABLED_P2P=1.
+b361218e73ad:6531:6782 [0] NCCL INFO P2P is disabled between connected GPUs 1 and 0. You can repress this message with NCCL_IGNORE_DISABLED_P2P=1.
+b361218e73ad:6531:6782 [0] NCCL INFO P2P is disabled between connected GPUs 0 and 1. You can repress this message with NCCL_IGNORE_DISABLED_P2P=1.
+b361218e73ad:6531:6782 [0] NCCL INFO P2P is disabled between connected GPUs 0 and 1. You can repress this message with NCCL_IGNORE_DISABLED_P2P=1.
+b361218e73ad:6531:6782 [0] NCCL INFO P2P is disabled between connected GPUs 1 and 0. You can repress this message with NCCL_IGNORE_DISABLED_P2P=1.
+b361218e73ad:6531:6782 [0] NCCL INFO P2P is disabled between connected GPUs 1 and 0. You can repress this message with NCCL_IGNORE_DISABLED_P2P=1.
+b361218e73ad:6531:6782 [0] NCCL INFO P2P is disabled between connected GPUs 0 and 1. You can repress this message with NCCL_IGNORE_DISABLED_P2P=1.
+b361218e73ad:6531:6782 [0] NCCL INFO P2P is disabled between connected GPUs 0 and 1. You can repress this message with NCCL_IGNORE_DISABLED_P2P=1.
+b361218e73ad:6532:6783 [1] NCCL INFO P2P is disabled between connected GPUs 1 and 0. You can repress this message with NCCL_IGNORE_DISABLED_P2P=1.
+b361218e73ad:6532:6783 [1] NCCL INFO P2P is disabled between connected GPUs 1 and 0. You can repress this message with NCCL_IGNORE_DISABLED_P2P=1.
+b361218e73ad:6532:6783 [1] NCCL INFO P2P is disabled between connected GPUs 0 and 1. You can repress this message with NCCL_IGNORE_DISABLED_P2P=1.
+b361218e73ad:6531:6782 [0] NCCL INFO Setting affinity for GPU 0 to 64-127,192-255
+b361218e73ad:6532:6783 [1] NCCL INFO P2P is disabled between connected GPUs 0 and 1. You can repress this message with NCCL_IGNORE_DISABLED_P2P=1.
+b361218e73ad:6532:6783 [1] NCCL INFO P2P is disabled between connected GPUs 1 and 0. You can repress this message with NCCL_IGNORE_DISABLED_P2P=1.
+b361218e73ad:6532:6783 [1] NCCL INFO P2P is disabled between connected GPUs 1 and 0. You can repress this message with NCCL_IGNORE_DISABLED_P2P=1.
+b361218e73ad:6532:6783 [1] NCCL INFO P2P is disabled between connected GPUs 0 and 1. You can repress this message with NCCL_IGNORE_DISABLED_P2P=1.
+b361218e73ad:6532:6783 [1] NCCL INFO P2P is disabled between connected GPUs 0 and 1. You can repress this message with NCCL_IGNORE_DISABLED_P2P=1.
+b361218e73ad:6532:6783 [1] NCCL INFO Setting affinity for GPU 1 to 64-127,192-255
+b361218e73ad:6531:6782 [0] NCCL INFO comm 0x2ae20460 rank 0 nRanks 2 nNodes 1 localRanks 2 localRank 0 MNNVL 0
+b361218e73ad:6532:6783 [1] NCCL INFO comm 0x2542e0f0 rank 1 nRanks 2 nNodes 1 localRanks 2 localRank 1 MNNVL 0
+b361218e73ad:6531:6782 [0] NCCL INFO Channel 00/04 : 0 1
+b361218e73ad:6531:6782 [0] NCCL INFO Channel 01/04 : 0 1
+b361218e73ad:6531:6782 [0] NCCL INFO Channel 02/04 : 0 1
+b361218e73ad:6531:6782 [0] NCCL INFO Channel 03/04 : 0 1
+b361218e73ad:6532:6783 [1] NCCL INFO Trees [0] -1/-1/-1->1->0 [1] 0/-1/-1->1->-1 [2] -1/-1/-1->1->0 [3] 0/-1/-1->1->-1
+b361218e73ad:6532:6783 [1] NCCL INFO P2P Chunksize set to 131072
+b361218e73ad:6531:6782 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] -1/-1/-1->0->1 [2] 1/-1/-1->0->-1 [3] -1/-1/-1->0->1
+b361218e73ad:6531:6782 [0] NCCL INFO P2P Chunksize set to 131072
+b361218e73ad:6532:6783 [1] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so. 
+b361218e73ad:6531:6782 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so. 
+b361218e73ad:6532:6783 [1] NCCL INFO P2P is disabled between connected GPUs 0 and 1. You can repress this message with NCCL_IGNORE_DISABLED_P2P=1.
+b361218e73ad:6531:6782 [0] NCCL INFO P2P is disabled between connected GPUs 0 and 1. You can repress this message with NCCL_IGNORE_DISABLED_P2P=1.
+b361218e73ad:6531:6782 [0] NCCL INFO Check P2P Type isAllDirectP2p 0 directMode 0
+b361218e73ad:6531:6786 [0] NCCL INFO [Proxy Service] Device 0 CPU core 94
+b361218e73ad:6532:6787 [1] NCCL INFO [Proxy Service] Device 1 CPU core 215
+b361218e73ad:6531:6788 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 229
+b361218e73ad:6532:6789 [1] NCCL INFO [Proxy Service UDS] Device 1 CPU core 230
+b361218e73ad:6532:6783 [1] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+b361218e73ad:6532:6783 [1] NCCL INFO 4 coll channels, 4 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+b361218e73ad:6531:6782 [0] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+b361218e73ad:6531:6782 [0] NCCL INFO 4 coll channels, 4 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+b361218e73ad:6531:6782 [0] NCCL INFO CC Off, workFifoBytes 1048576
+b361218e73ad:6532:6783 [1] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so. Using internal tuner plugin.
+b361218e73ad:6532:6783 [1] NCCL INFO ncclCommInitRankConfig comm 0x2542e0f0 rank 1 nranks 2 cudaDev 1 nvmlDev 1 busId c1000 commId 0xfbe07b8332a9cc6d - Init COMPLETE
+b361218e73ad:6532:6783 [1] NCCL INFO Init timings - ncclCommInitRankConfig: rank 1 nranks 2 total 0.22 (kernels 0.18, alloc 0.00, bootstrap 0.02, allgathers 0.00, topo 0.01, graphs 0.00, connections 0.00, rest 0.00)
+b361218e73ad:6531:6782 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so. Using internal tuner plugin.
+b361218e73ad:6531:6782 [0] NCCL INFO ncclCommInitRankConfig comm 0x2ae20460 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId a1000 commId 0xfbe07b8332a9cc6d - Init COMPLETE
+b361218e73ad:6531:6782 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 0 nranks 2 total 0.23 (kernels 0.18, alloc 0.00, bootstrap 0.03, allgathers 0.00, topo 0.01, graphs 0.00, connections 0.00, rest 0.00)
+[rank0]:[I829 20:12:10.713240907 ProcessGroupNCCL.cpp:3132] [PG ID 0 PG GUID 0 Rank 0] NCCL_DEBUG: INFO
+b361218e73ad:6531:6790 [0] NCCL INFO P2P is disabled between connected GPUs 0 and 1. You can repress this message with NCCL_IGNORE_DISABLED_P2P=1.
+[rank1]:[I829 20:12:10.720872539 ProcessGroupNCCL.cpp:3132] [PG ID 0 PG GUID 0 Rank 1] NCCL_DEBUG: INFO
+b361218e73ad:6532:6791 [1] NCCL INFO P2P is disabled between connected GPUs 1 and 0. You can repress this message with NCCL_IGNORE_DISABLED_P2P=1.
+b361218e73ad:6531:6790 [0] NCCL INFO P2P is disabled between connected GPUs 0 and 1. You can repress this message with NCCL_IGNORE_DISABLED_P2P=1.
+b361218e73ad:6531:6790 [0] NCCL INFO P2P is disabled between connected GPUs 0 and 1. You can repress this message with NCCL_IGNORE_DISABLED_P2P=1.
+b361218e73ad:6532:6791 [1] NCCL INFO P2P is disabled between connected GPUs 1 and 0. You can repress this message with NCCL_IGNORE_DISABLED_P2P=1.
+b361218e73ad:6531:6790 [0] NCCL INFO P2P is disabled between connected GPUs 0 and 1. You can repress this message with NCCL_IGNORE_DISABLED_P2P=1.
+b361218e73ad:6532:6791 [1] NCCL INFO P2P is disabled between connected GPUs 1 and 0. You can repress this message with NCCL_IGNORE_DISABLED_P2P=1.
+[I829 20:12:10.750360762 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+b361218e73ad:6531:6790 [0] NCCL INFO P2P is disabled between connected GPUs 0 and 1. You can repress this message with NCCL_IGNORE_DISABLED_P2P=1.
+b361218e73ad:6532:6791 [1] NCCL INFO P2P is disabled between connected GPUs 1 and 0. You can repress this message with NCCL_IGNORE_DISABLED_P2P=1.
+b361218e73ad:6531:6790 [0] NCCL INFO Channel 00 : 0[0] -> 1[1] via SHM/direct/direct
+b361218e73ad:6531:6790 [0] NCCL INFO P2P is disabled between connected GPUs 0 and 1. You can repress this message with NCCL_IGNORE_DISABLED_P2P=1.
+b361218e73ad:6532:6791 [1] NCCL INFO P2P is disabled between connected GPUs 1 and 0. You can repress this message with NCCL_IGNORE_DISABLED_P2P=1.
+b361218e73ad:6531:6790 [0] NCCL INFO Channel 01 : 0[0] -> 1[1] via SHM/direct/direct
+b361218e73ad:6531:6790 [0] NCCL INFO P2P is disabled between connected GPUs 0 and 1. You can repress this message with NCCL_IGNORE_DISABLED_P2P=1.
+b361218e73ad:6531:6790 [0] NCCL INFO Channel 02 : 0[0] -> 1[1] via SHM/direct/direct
+b361218e73ad:6531:6790 [0] NCCL INFO P2P is disabled between connected GPUs 0 and 1. You can repress this message with NCCL_IGNORE_DISABLED_P2P=1.
+b361218e73ad:6532:6791 [1] NCCL INFO Channel 00 : 1[1] -> 0[0] via SHM/direct/direct
+b361218e73ad:6532:6791 [1] NCCL INFO P2P is disabled between connected GPUs 1 and 0. You can repress this message with NCCL_IGNORE_DISABLED_P2P=1.
+b361218e73ad:6531:6790 [0] NCCL INFO Channel 03 : 0[0] -> 1[1] via SHM/direct/direct
+b361218e73ad:6532:6791 [1] NCCL INFO Channel 01 : 1[1] -> 0[0] via SHM/direct/direct
+b361218e73ad:6532:6791 [1] NCCL INFO P2P is disabled between connected GPUs 1 and 0. You can repress this message with NCCL_IGNORE_DISABLED_P2P=1.
+b361218e73ad:6532:6791 [1] NCCL INFO Channel 02 : 1[1] -> 0[0] via SHM/direct/direct
+b361218e73ad:6532:6791 [1] NCCL INFO P2P is disabled between connected GPUs 1 and 0. You can repress this message with NCCL_IGNORE_DISABLED_P2P=1.
+b361218e73ad:6532:6791 [1] NCCL INFO Channel 03 : 1[1] -> 0[0] via SHM/direct/direct
+b361218e73ad:6531:6790 [0] NCCL INFO Connected all rings, use ring PXN 0 GDR 1
+b361218e73ad:6532:6791 [1] NCCL INFO Connected all rings, use ring PXN 0 GDR 1
+[rank0]:[I829 20:12:10.812516633 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=1, OpType=BROADCAST, TensorShape=[714], TensorDtypes=Long, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:10.812799285 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=1, OpType=BROADCAST, TensorShape=[714], TensorDtypes=Long, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:10.825747251 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=2, OpType=BROADCAST, TensorShape=[142086144], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:10.832761080 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=2, OpType=BROADCAST, TensorShape=[142086144], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:10.835862988 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=3, OpType=BROADCAST, TensorShape=[132132864], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:10.835918262 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=3, OpType=BROADCAST, TensorShape=[132132864], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:10.837947781 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=4, OpType=BROADCAST, TensorShape=[132132864], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:10.838181451 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=4, OpType=BROADCAST, TensorShape=[132132864], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:10.840163381 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=5, OpType=BROADCAST, TensorShape=[132132864], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:10.840603629 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=5, OpType=BROADCAST, TensorShape=[132132864], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:10.842416421 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=6, OpType=BROADCAST, TensorShape=[132132864], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:10.842772120 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=6, OpType=BROADCAST, TensorShape=[132132864], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:10.845027835 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=7, OpType=BROADCAST, TensorShape=[132132864], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:10.845128224 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=7, OpType=BROADCAST, TensorShape=[132132864], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:10.847412082 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=8, OpType=BROADCAST, TensorShape=[132132864], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:10.847511539 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=8, OpType=BROADCAST, TensorShape=[132132864], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[I829 20:12:10.849767034 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:10.849846513 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:10.849909582 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:10.849939107 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:10.849979794 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:10.850025209 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:10.850073140 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:10.850108837 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:10.850145927 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:10.850178508 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:10.850214937 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[rank0]:[I829 20:12:10.850372764 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=9, OpType=BROADCAST, TensorShape=[165165056], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:10.850432446 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=9, OpType=BROADCAST, TensorShape=[165165056], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:10.852738045 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=10, OpType=BROADCAST, TensorShape=[64], TensorDtypes=Float, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:10.852777078 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=10, OpType=BROADCAST, TensorShape=[64], TensorDtypes=Float, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:10.857805150 reducer.cpp:131] Reducer initialized with bucket_bytes_cap: 26214400 first_bucket_bytes_cap: 1048576
+[rank1]:[I829 20:12:10.857879039 reducer.cpp:131] Reducer initialized with bucket_bytes_cap: 26214400 first_bucket_bytes_cap: 1048576
+[rank0]:[I829 20:12:10.857928022 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:10.857942519 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:10.861118957 logger.cpp:223] [Rank 0]: DDP Initialized with: 
+broadcast_buffers: 1
+bucket_cap_bytes: 26214400
+find_unused_parameters: 0
+gradient_as_bucket_view: 0
+has_sync_bn: 0
+is_multi_device_module: 0
+iteration: 0
+num_parameter_tensors: 201
+output_device: 0
+rank: 0
+total_parameter_size_bytes: 2200096768
+world_size: 2
+backend_name: nccl
+bucket_sizes: 2200096768
+cuda_visible_devices: N/A
+device_ids: 0
+dtypes: c10::BFloat16
+master_addr: b361218e73ad
+master_port: 34067
+module_name: LlamaForCausalLM
+nccl_async_error_handling: 1
+nccl_blocking_wait: N/A
+nccl_debug: INFO
+nccl_ib_timeout: N/A
+nccl_nthreads: N/A
+nccl_socket_ifname: N/A
+torch_distributed_debug: DETAIL
+
+[rank1]:[I829 20:12:10.861205149 logger.cpp:223] [Rank 1]: DDP Initialized with: 
+broadcast_buffers: 1
+bucket_cap_bytes: 26214400
+find_unused_parameters: 0
+gradient_as_bucket_view: 0
+has_sync_bn: 0
+is_multi_device_module: 0
+iteration: 0
+num_parameter_tensors: 201
+output_device: 1
+rank: 1
+total_parameter_size_bytes: 2200096768
+world_size: 2
+backend_name: nccl
+bucket_sizes: 2200096768
+cuda_visible_devices: N/A
+device_ids: 1
+dtypes: c10::BFloat16
+master_addr: b361218e73ad
+master_port: 34067
+module_name: LlamaForCausalLM
+nccl_async_error_handling: 1
+nccl_blocking_wait: N/A
+nccl_debug: INFO
+nccl_ib_timeout: N/A
+nccl_nthreads: N/A
+nccl_socket_ifname: N/A
+torch_distributed_debug: DETAIL
+
+[I829 20:12:10.862292976 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:10.862409295 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:10.862417951 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:10.862424914 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:10.862430896 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:10.862436787 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:10.862472584 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:10.862479247 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:10.862485228 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:10.862491169 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:10.862497060 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:10.862503041 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:10.862528469 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:10.862534721 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:10.960616339 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:10.960654301 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:10.960661684 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:10.960674579 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:10.960715806 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:10.960775098 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:10.960815624 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:10.960852574 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:10.021168221 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:10.021192096 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:10.021229496 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:10.021454600 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:10.021477182 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:10.021485107 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:10.021492291 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:10.021528890 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:10.021536704 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:10.021543607 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:10.021550490 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+/usr/local/lib/python3.12/dist-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/usr/local/lib/python3.12/dist-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank1]:[I829 20:12:10.022562074 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=11OpType=BARRIER)
+[rank0]:[I829 20:12:10.022563436 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=11OpType=BARRIER)
+[rank1]:[I829 20:12:10.030782524 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=12, OpType=BROADCAST, TensorShape=[64], TensorDtypes=Float, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:10.030781261 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=12, OpType=BROADCAST, TensorShape=[64], TensorDtypes=Float, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[I829 20:12:10.121388574 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:10.121412098 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:10.121444749 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:10.121452244 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:10.121747960 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:10.121767056 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:10.121797343 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:10.121804697 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[rank1]:[I829 20:12:11.541684933 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=13, OpType=ALLREDUCE, TensorShape=[1100048384], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.543442079 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=13, OpType=ALLREDUCE, TensorShape=[1100048384], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[I829 20:12:11.622481292 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.622531216 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.719912015 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:11.720094439 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:11.750698662 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:12:11.800126880 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.800159452 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[rank0]:[I829 20:12:11.893815121 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=14, OpType=ALLREDUCE, TensorShape=[], TensorDtypes=Float, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.894371818 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=14, OpType=ALLREDUCE, TensorShape=[], TensorDtypes=Float, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+step=1/2 loss=1.7871 rank0_step_ms=863.97
+[rank0]:[I829 20:12:11.897508521 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=15OpType=BARRIER)
+[rank1]:[I829 20:12:11.897514002 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=15OpType=BARRIER)
+[rank0]:[I829 20:12:11.899556836 logger.cpp:384] [Rank 0 / 2] [before iteration 1] Training LlamaForCausalLM unused_parameter_size=0 
+ Avg forward compute time: 432446528 
+ Avg backward compute time: 82604992 
+Avg backward comm. time: 251494400 
+ Avg backward comm/comp overlap time: 1538048
+[rank1]:[I829 20:12:11.899570211 logger.cpp:384] [Rank 1 / 2] [before iteration 1] Training LlamaForCausalLM unused_parameter_size=0 
+ Avg forward compute time: 428879840 
+ Avg backward compute time: 85995520 
+Avg backward comm. time: 253215744 
+ Avg backward comm/comp overlap time: 3136512
+[rank0]:[I829 20:12:11.899655562 reducer.cpp:1925] 46 buckets rebuilt with size limits: 1048576, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400 bytes.
+[rank1]:[I829 20:12:11.899666422 reducer.cpp:1925] 46 buckets rebuilt with size limits: 1048576, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400, 26214400 bytes.
+[rank0]:[I829 20:12:11.899703582 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=16, OpType=BROADCAST, TensorShape=[202], TensorDtypes=Int, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.899713691 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=16, OpType=BROADCAST, TensorShape=[202], TensorDtypes=Int, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[I829 20:12:11.900219112 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.900249329 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.900256753 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.900273455 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.900279777 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.900285648 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.900299594 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.900316917 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[rank0]:[I829 20:12:11.901021102 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=17, OpType=BROADCAST, TensorShape=[46], TensorDtypes=Int, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.901072759 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=17, OpType=BROADCAST, TensorShape=[46], TensorDtypes=Int, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.902770033 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.902794419 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.902804708 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.902813505 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.902825097 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.902833222 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.902846196 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.902854472 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.902858710 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.902867276 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.902875942 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.902881012 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.902888436 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.902891672 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.902896681 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.902901300 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.902913002 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.902912942 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.902920917 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.902921939 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.902934773 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.902935765 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.902942858 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.902944722 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.902955702 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.902961223 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.902964289 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.902972835 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.902977063 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.902985448 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.902994535 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.902999054 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.903020765 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.903019873 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.903034611 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.903038037 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.903042987 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.903047565 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.903059458 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.903065649 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.903068615 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.903076800 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.903082180 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.903090937 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.903091638 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.903100385 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.903104633 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.903112698 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.903112928 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.903120873 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.903126925 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.903134689 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.903136593 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.903145660 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.903150800 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.903159877 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.903160317 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.903168222 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.903172571 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.903180185 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.903180215 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.903188931 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.903195624 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.903201745 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.903203799 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.903209550 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.903218076 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.903223005 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.903226402 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.903231461 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.903238735 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.903243574 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.903247161 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.903250948 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.903259434 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.903264554 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.903268421 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.903274592 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.903282016 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.903290903 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.903295121 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.903304008 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.903304489 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.903312253 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.903317283 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank0]:[I829 20:12:11.903324937 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.903324947 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.903333704 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.903347971 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.903356316 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.903370743 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.903378929 reducer.cpp:1220] Reducer: comm-optimized memory allocator not found, using regular one
+[rank1]:[I829 20:12:11.903980451 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=18, OpType=BROADCAST, TensorShape=[64], TensorDtypes=Float, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.903991902 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=18, OpType=BROADCAST, TensorShape=[64], TensorDtypes=Float, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.935044981 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=19, OpType=ALLREDUCE, TensorShape=[65536000], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.935414656 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=19, OpType=ALLREDUCE, TensorShape=[65536000], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.938999232 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=20, OpType=ALLREDUCE, TensorShape=[23070720], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.939140027 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=20, OpType=ALLREDUCE, TensorShape=[23070720], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.942773034 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=21, OpType=ALLREDUCE, TensorShape=[15730688], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.942870958 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=21, OpType=ALLREDUCE, TensorShape=[15730688], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.947324840 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=22, OpType=ALLREDUCE, TensorShape=[16779264], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.947457269 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=22, OpType=ALLREDUCE, TensorShape=[16779264], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.949804025 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=23, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.949916427 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=23, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.955255324 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=24, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.955303996 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=24, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.957638890 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=25, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.957714572 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=25, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.962730692 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=26, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.962825751 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=26, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.965150536 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=27, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.965226840 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=27, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.970333570 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=28, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.970334592 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=28, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.972602059 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=29, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.972665248 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=29, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.977594374 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=30, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.977727835 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=30, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.979959505 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=31, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.980053782 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=31, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.984921523 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=32, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.985020118 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=32, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.987253060 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=33, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.987344272 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=33, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.992354100 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=34, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.992447796 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=34, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.994737285 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=35, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.994816464 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=35, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.999732896 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=36, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.999826141 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=36, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[I829 20:12:11.000620376 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.000652146 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.000659780 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.000674848 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.000681160 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.000700797 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.000707269 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.000721967 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.000735563 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.000768605 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.000782681 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.000796938 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.000810133 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.000827355 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.000840660 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.000979933 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.001135295 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.001198123 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.001206028 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.001212350 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.001218511 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.001224653 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.001230604 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.001236706 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.001242697 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.001248839 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.001254790 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.001288724 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.001295146 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.001301167 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.001307228 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.001313260 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.001319251 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.001327707 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.001333758 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.001339760 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.001345841 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.001351852 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.001357864 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.001378503 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.001384764 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.001390786 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.001396757 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.001402848 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.001408920 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.001415021 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.001428417 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.001470876 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.001477709 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.001483691 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.001489952 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.001496024 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.001502235 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.001527864 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.001534196 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.001540367 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.001546358 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.001570995 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.001577878 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.001584079 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.001590171 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.001604869 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.001633072 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.001640145 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.001646246 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.001652288 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.001679198 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.001685701 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.001691702 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.001697823 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[rank1]:[I829 20:12:11.002303694 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=37, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.002363847 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=37, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.007289486 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=38, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.007398782 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=38, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.009567213 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=39, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.009570058 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=39, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.014420917 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=40, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.014439883 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=40, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.016571734 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=41, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.016645082 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=41, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.021540926 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=42, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.021753045 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=42, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.024065297 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=43, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.024142592 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=43, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.029031663 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=44, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.029149965 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=44, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.031869303 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=45, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.031919658 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=45, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.036837823 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=46, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.036947970 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=46, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.039318000 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=47, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.039399554 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=47, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.044361812 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=48, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.044466379 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=48, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.046696827 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=49, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.046768762 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=49, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.052090968 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=50, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.052192489 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=50, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.054476306 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=51, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.054555526 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=51, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.059593286 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=52, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.059687784 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=52, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.061967224 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=53, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.061992351 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=53, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.066711782 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=54, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.066781323 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=54, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.069062245 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=55, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.068985211 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=55, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.073921150 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=56, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.074078426 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=56, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.076211259 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=57, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.076332698 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=57, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.081049324 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=58, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.081125116 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=58, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.083238504 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=59, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.083304488 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=59, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.088098359 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=60, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.088212735 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=60, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.090456908 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=61, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.090490471 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=61, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.095248224 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=62, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.095328445 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=62, OpType=ALLREDUCE, TensorShape=[20975616], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.097330152 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=63, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.097349599 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=63, OpType=ALLREDUCE, TensorShape=[23068672], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.101936000 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=64, OpType=ALLREDUCE, TensorShape=[74977280], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.102148019 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=64, OpType=ALLREDUCE, TensorShape=[74977280], TensorDtypes=BFloat16, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[I829 20:12:11.102188746 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.102208453 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.102215125 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.102221127 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.102226968 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.102232869 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.102239020 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.102245032 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.102250863 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.102256634 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.102293563 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.102300356 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.102306197 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.102312018 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.102317819 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.102323630 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.102329501 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.102335292 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.102341123 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.102346883 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.102352684 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.102358455 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.102364306 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.102370067 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.102393491 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.102400524 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.102406456 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.102412256 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.102418148 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.102423918 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.102429739 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.102435530 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.102459105 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.102465256 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.102471177 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.102476978 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.102482819 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.102507446 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.102513888 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.102519769 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.102525590 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.102531431 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.102558752 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.102565054 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.102570915 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.102596493 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.102602905 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.102608736 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.102632010 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.102638152 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.102661455 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.102667797 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.102673819 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.102703194 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.102709456 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.102737739 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.102744271 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.102750162 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.102770871 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.102777684 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.102801820 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.102808051 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.102828810 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.102834972 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.102863906 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.102870188 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.102897960 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.102904202 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.102928929 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.102935271 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.102941142 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.102967351 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.102973683 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.102979594 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.103114328 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.103121942 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.103128294 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.103154684 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.103161386 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.103167498 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.103173339 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.103179190 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.103204537 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.103211551 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.103217622 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.103223513 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.103229575 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.103235476 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.103264019 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.103271273 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.103293174 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.103299346 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.103305437 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.103329092 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.103354369 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.103487440 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.103510914 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.103544307 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.203555326 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.203582487 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.203620398 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.203627612 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.203653320 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.203659672 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.203683487 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.203689979 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.203714415 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.203720747 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.203743620 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.203749842 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.203773967 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.203780209 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.203801940 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.203826867 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.203833089 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.203855461 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.203861873 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.203885688 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.203892019 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.203914191 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.203920413 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.203946462 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.203991406 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.204112975 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.204132242 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.204162809 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[rank1]:[I829 20:12:11.222038970 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=65, OpType=ALLREDUCE, TensorShape=[], TensorDtypes=Float, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.222219770 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=65, OpType=ALLREDUCE, TensorShape=[], TensorDtypes=Float, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+step=2/2 loss=1.6440 rank0_step_ms=323.20
+[rank0]:[I829 20:12:11.224196109 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=66, OpType=ALLREDUCE, TensorShape=[], TensorDtypes=Long, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.224199326 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=66, OpType=ALLREDUCE, TensorShape=[], TensorDtypes=Long, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.225784449 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=67, OpType=ALLREDUCE, TensorShape=[], TensorDtypes=Long, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.225825937 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=67, OpType=ALLREDUCE, TensorShape=[], TensorDtypes=Long, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.227382646 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=68, OpType=ALLREDUCE, TensorShape=[], TensorDtypes=Double, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.227432510 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=68, OpType=ALLREDUCE, TensorShape=[], TensorDtypes=Double, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:W0829 20:12:11.879000 6532 torch/distributed/distributed_c10d.py:3070] _object_to_tensor size: 79 hash value: 8002512321841129961
+[rank0]:W0829 20:12:11.879000 6531 torch/distributed/distributed_c10d.py:3070] _object_to_tensor size: 79 hash value: 8002512321841129961
+[rank1]:[I829 20:12:11.230339721 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=69, OpType=ALLGATHER, TensorShape=[1], TensorDtypes=Long, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.230365840 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=69, OpType=ALLGATHER, TensorShape=[1], TensorDtypes=Long, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:[I829 20:12:11.239405582 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=70, OpType=ALLGATHER, TensorShape=[79], TensorDtypes=Byte, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank1]:[I829 20:12:11.239466767 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=70, OpType=ALLGATHER, TensorShape=[79], TensorDtypes=Byte, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[rank0]:W0829 20:12:11.892000 6531 torch/distributed/distributed_c10d.py:3085] _tensor_to_object size: 79 hash value: 9731873666037624376
+[rank1]:W0829 20:12:11.892000 6532 torch/distributed/distributed_c10d.py:3085] _tensor_to_object size: 79 hash value: 9731873666037624376
+[rank1]:W0829 20:12:11.893000 6532 torch/distributed/distributed_c10d.py:3085] _tensor_to_object size: 79 hash value: 9731873666037624376
+[rank0]:W0829 20:12:11.892000 6531 torch/distributed/distributed_c10d.py:3085] _tensor_to_object size: 79 hash value: 9731873666037624376
+[rank1]:[I829 20:12:11.243054178 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=71OpType=BARRIER)
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s][I829 20:12:11.304154372 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.304182705 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.304218603 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.304225415 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.304231316 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.304255342 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.304261684 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.304282302 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.304306368 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.304331715 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.304362063 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.304369537 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:11.304394644 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.304401887 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.304427285 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:11.304451140 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.304458033 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.304482329 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.304532223 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.304560536 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.304566868 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.304591374 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:11.304638543 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:11.304662728 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:12.722082414 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:12.722239890 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:12.751044647 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:12:12.837631734 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+[I829 20:12:13.723659335 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:13.723779291 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:13.751353192 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:12:13.838105299 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+[I829 20:12:14.725995926 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:14.726280201 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:14.751757997 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:12:14.838640530 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+[I829 20:12:15.682577902 TCPStoreLibUvBackend.cpp:880] [c10d - trace] compareAndSet key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:15.752245358 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:12:15.839099979 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+[I829 20:12:16.729748356 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:16.729913246 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:16.752545587 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:12:16.839615883 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+[I829 20:12:17.732113039 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:17.732285153 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:17.752842931 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:12:17.840147317 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+Writing model shards: 100%|██████████| 1/1 [00:05<00:00,  5.94s/it]Writing model shards: 100%|██████████| 1/1 [00:05<00:00,  5.94s/it]
+[I829 20:12:18.734559077 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:18.734729808 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:18.753414721 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:12:18.840992372 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+[I829 20:12:19.736820686 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:19.737038967 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:19.753957215 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:12:19.841513767 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+[I829 20:12:20.687441214 TCPStoreLibUvBackend.cpp:880] [c10d - trace] compareAndSet key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:20.754385856 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:12:20.841926918 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+[I829 20:12:21.741311435 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:21.741518465 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:21.754802444 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:12:21.842290737 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+[I829 20:12:22.743830239 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:22.744108934 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:22.755266070 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:12:22.842614730 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+[I829 20:12:23.746140631 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:23.746326010 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:23.755723214 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:12:23.842927713 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+[I829 20:12:24.747953817 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:24.748254934 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:24.756168837 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:12:24.843225076 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+[I829 20:12:25.692567991 TCPStoreLibUvBackend.cpp:880] [c10d - trace] compareAndSet key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:25.756601805 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:12:25.843585989 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+[I829 20:12:26.751303017 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:26.751481634 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:26.757077705 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:12:26.843939078 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+[I829 20:12:27.753143595 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:27.753333352 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:27.757520973 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:12:27.844283159 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+[I829 20:12:28.755176214 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:28.755363567 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:28.757979429 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:12:28.844704857 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+[I829 20:12:29.757087725 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:29.757285598 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:29.758444849 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:12:29.845185024 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+[rank0]:[I829 20:12:29.145941312 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=71OpType=BARRIER)
+[rank1]:[I829 20:12:29.157596606 ProcessGroupWrapper.cpp:586] [Rank 1] Running collective: CollectiveFingerPrint(SequenceNumber=72, OpType=BROADCAST, TensorShape=[], TensorDtypes=Long, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[I829 20:12:29.223730002 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:29.223831192 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:29.226507739 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:29.226607717 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:30.697533205 TCPStoreLibUvBackend.cpp:880] [c10d - trace] compareAndSet key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s][I829 20:12:30.758956085 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+Loading weights:  31%|███       | 62/201 [00:00<00:00, 595.20it/s][I829 20:12:30.845610819 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+Loading weights:  66%|██████▌   | 133/201 [00:00<00:00, 659.84it/s]Loading weights: 100%|██████████| 201/201 [00:00<00:00, 778.76it/s]
+{
+  "captured_at_utc": "2026-08-29T20:12:31.174336+00:00",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "pytorch_version": "2.8.0+cu128",
+  "backend": "nccl",
+  "model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "dataset": "roneneldan/TinyStories",
+  "dataset_samples": 16,
+  "parameter_count": 1100048384,
+  "precision": "bfloat16",
+  "world_size": 2,
+  "batch_size_per_gpu": 2,
+  "global_batch_size": 4,
+  "sequence_length": 64,
+  "steps": 2,
+  "warmup_steps": 0,
+  "learning_rate": 2e-05,
+  "seed": 42,
+  "metrics": {
+    "mean_loss_per_step": [
+      1.787129,
+      1.643951
+    ],
+    "rank0_step_time_ms": [
+      863.968,
+      323.203
+    ],
+    "elapsed_seconds_max_rank": 1.187541,
+    "tokens_processed_global": 512,
+    "tokens_per_second_global": 431.143,
+    "peak_pytorch_memory_bytes_max_rank": 13238137856
+  },
+  "checkpoint": {
+    "path": "outputs/stage2_nccl_debug_checkpoint",
+    "optimizer_state_saved": true,
+    "parameters_synchronized": true,
+    "reload_loss": 1.07866,
+    "reload_verified": true
+  }
+}
+[rank0]:[I829 20:12:31.531258438 ProcessGroupWrapper.cpp:586] [Rank 0] Running collective: CollectiveFingerPrint(SequenceNumber=72, OpType=BROADCAST, TensorShape=[], TensorDtypes=Long, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))
+[I829 20:12:31.553546692 ProcessGroupNCCL.cpp:1529] [PG ID 0 PG GUID 0 Rank 0] ProcessGroupNCCL destructor entered.
+[W829 20:12:31.553558284 ProcessGroupNCCL.cpp:1538] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+[I829 20:12:31.553568403 ProcessGroupNCCL.cpp:1455] [PG ID 0 PG GUID 0 Rank 0] Launching ProcessGroupNCCL abort asynchronously.
+[I829 20:12:31.553711793 ProcessGroupNCCL.cpp:1529] [PG ID 0 PG GUID 0 Rank 1] ProcessGroupNCCL destructor entered.
+[I829 20:12:31.553749244 ProcessGroupNCCL.cpp:1455] [PG ID 0 PG GUID 0 Rank 1] Launching ProcessGroupNCCL abort asynchronously.
+[I829 20:12:31.554310921 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_start address:[b361218e73ad]:40542
+[I829 20:12:31.554345466 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_0_trace_end address:[b361218e73ad]:40542
+[I829 20:12:31.554385962 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_start address:[b361218e73ad]:40532
+[I829 20:12:31.554392955 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/default_pg/0//cuda//NCCL_1_trace_end address:[b361218e73ad]:40532
+[I829 20:12:31.554775054 NCCLUtils.cpp:299] Aborting ncclComm_ 0x2ae20460 with reason: No abort reason provided.
+[I829 20:12:31.554802816 NCCLUtils.cpp:299] Aborting ncclComm_ 0x2542e0f0 with reason: No abort reason provided.
+b361218e73ad:6532:6803 [1] NCCL INFO misc/socket.cc:64 -> 3
+b361218e73ad:6531:6802 [0] NCCL INFO misc/socket.cc:64 -> 3
+b361218e73ad:6531:6802 [0] NCCL INFO misc/socket.cc:81 -> 3
+b361218e73ad:6532:6803 [1] NCCL INFO misc/socket.cc:81 -> 3
+b361218e73ad:6531:6802 [0] NCCL INFO misc/socket.cc:863 -> 3
+b361218e73ad:6532:6803 [1] NCCL INFO misc/socket.cc:863 -> 3
+b361218e73ad:6531:6786 [0] NCCL INFO misc/socket.cc:915 -> 3
+b361218e73ad:6531:6802 [0] NCCL INFO misc/socket.cc:64 -> 3
+b361218e73ad:6532:6803 [1] NCCL INFO misc/socket.cc:64 -> 3
+b361218e73ad:6531:6802 [0] NCCL INFO misc/socket.cc:81 -> 3
+b361218e73ad:6532:6803 [1] NCCL INFO misc/socket.cc:81 -> 3
+b361218e73ad:6531:6802 [0] NCCL INFO misc/socket.cc:863 -> 3
+b361218e73ad:6532:6803 [1] NCCL INFO misc/socket.cc:863 -> 3
+b361218e73ad:6532:6787 [1] NCCL INFO misc/socket.cc:915 -> 3
+b361218e73ad:6531:6786 [0] NCCL INFO misc/socket.cc:915 -> 3
+b361218e73ad:6532:6787 [1] NCCL INFO misc/socket.cc:915 -> 3
+[I829 20:12:31.759300768 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40532
+[I829 20:12:31.760542985 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:31.760759463 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:31.846205222 TCPStoreLibUvBackend.cpp:942] [c10d - trace] check key_count:1 keys[0]:/exception_dump address:[b361218e73ad]:40542
+b361218e73ad:6531:6802 [0] NCCL INFO comm 0x2ae20460 rank 0 nranks 2 cudaDev 0 busId a1000 - Abort COMPLETE
+b361218e73ad:6532:6803 [1] NCCL INFO comm 0x2542e0f0 rank 1 nranks 2 cudaDev 1 busId c1000 - Abort COMPLETE
+[I829 20:12:31.089471831 ProcessGroupNCCL.cpp:1463] [PG ID 0 PG GUID 0 Rank 0] ProcessGroupNCCL aborts successfully.
+[I829 20:12:31.089534159 ProcessGroupNCCL.cpp:2041] [PG ID 0 PG GUID 0 Rank 0] ProcessGroupNCCL watchdog thread joined.
+[I829 20:12:31.089655076 ProcessGroupNCCL.cpp:1713] [PG ID 0 PG GUID 0 Rank 0] ProcessGroupNCCL heart beat monitor thread joined.
+[I829 20:12:31.089653193 ProcessGroupNCCL.cpp:1463] [PG ID 0 PG GUID 0 Rank 1] ProcessGroupNCCL aborts successfully.
+[I829 20:12:31.089718606 ProcessGroupNCCL.cpp:2041] [PG ID 0 PG GUID 0 Rank 1] ProcessGroupNCCL watchdog thread joined.
+[I829 20:12:31.089823623 ProcessGroupNCCL.cpp:1713] [PG ID 0 PG GUID 0 Rank 1] ProcessGroupNCCL heart beat monitor thread joined.
+[I829 20:12:31.089829504 TCPStoreLibUvBackend.cpp:129] [c10d - debug] Remote peer closed the connection.
+[I829 20:12:31.090127876 TCPStoreLibUvBackend.cpp:129] [c10d - debug] Remote peer closed the connection.
+[I829 20:12:32.747662029 SymmetricMemory.cpp:41] Destroying Symmetric Memory Allocators
+[I829 20:12:32.762736407 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:32.762903271 TCPStoreLibUvBackend.cpp:895] [c10d - trace] get key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:32.903312004 SymmetricMemory.cpp:41] Destroying Symmetric Memory Allocators
+[I829 20:12:33.465316661 TCPStoreLibUvBackend.cpp:913] [c10d - trace] add key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7.0/torchelastic/agent/terminal_state/num_members val:1 address:[localhost]:60354
+[I829 20:12:33.465487984 TCPStoreLibUvBackend.cpp:861] [c10d - trace] set key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7.0/torchelastic/agent/terminal_state/last_member address:[localhost]:60354
+[I829 20:12:33.465520906 TCPStoreLibUvBackend.cpp:979] [c10d - trace] wait key_count:1 keys[0]:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7.0/torchelastic/agent/terminal_state/last_member address:[localhost]:60354
+[I829 20:12:33.469598229 TCPStoreLibUvBackend.cpp:880] [c10d - trace] compareAndSet key:/torch.rendezvous.268f29b3-f2d5-4ee4-a558-a71080053cf7 address:[localhost]:60354
+[I829 20:12:33.473356552 TCPStoreLibUvBackend.cpp:129] [c10d - debug] Remote peer closed the connection.
+[I829 20:12:33.473492648 TCPStoreLibUvBackend.cpp:1190] [c10d - debug] Store exit requested
+
+[I829 20:12:33.473504230 TCPStoreLibUvBackend.cpp:1266] [c10d - debug] UV main loop done: res:1
+[I829 20:12:33.473511804 TCPStoreLibUvBackend.cpp:1272] [c10d - debug] Walking live handles prior to closing clients
+[I829 20:12:33.473518647 TCPStoreLibUvBackend.cpp:1253] [c10d - debug] UV live handle type 12 active:1 is-closing:0
+[I829 20:12:33.473545858 TCPStoreLibUvBackend.cpp:1282] [c10d - debug] Walking live handles after closing clients
+[I829 20:12:33.473551689 TCPStoreLibUvBackend.cpp:1253] [c10d - debug] UV live handle type 12 active:0 is-closing:1
+[I829 20:12:33.473558371 TCPStoreLibUvBackend.cpp:1291] [c10d] uv_loop_close failed with:-16 errn:EBUSY desc:resource busy or locked
+[I829 20:12:33.473631449 TCPStoreLibUvBackend.cpp:1301] [c10d] uv_loop cleanup finished.
+[I829 20:12:33.474228282 TCPStoreLibUvBackend.cpp:129] [c10d - debug] Remote peer closed the connection.
+[I829 20:12:33.474427838 TCPStoreLibUvBackend.cpp:1190] [c10d - debug] Store exit requested
+
+[I829 20:12:33.474443327 TCPStoreLibUvBackend.cpp:1266] [c10d - debug] UV main loop done: res:1
+[I829 20:12:33.474451061 TCPStoreLibUvBackend.cpp:1272] [c10d - debug] Walking live handles prior to closing clients
+[I829 20:12:33.474458545 TCPStoreLibUvBackend.cpp:1253] [c10d - debug] UV live handle type 12 active:1 is-closing:0
+[I829 20:12:33.474486618 TCPStoreLibUvBackend.cpp:1282] [c10d - debug] Walking live handles after closing clients
+[I829 20:12:33.474492519 TCPStoreLibUvBackend.cpp:1253] [c10d - debug] UV live handle type 12 active:0 is-closing:1
+[I829 20:12:33.474499262 TCPStoreLibUvBackend.cpp:1291] [c10d] uv_loop_close failed with:-16 errn:EBUSY desc:resource busy or locked
+[I829 20:12:33.474570656 TCPStoreLibUvBackend.cpp:1301] [c10d] uv_loop cleanup finished.
+[I829 20:12:33.955268945 SymmetricMemory.cpp:41] Destroying Symmetric Memory Allocators
