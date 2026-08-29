@@ -17,7 +17,7 @@ def parse_args():
     parser.add_argument("--model", default="TinyLlama/TinyLlama-1.1B-Chat-v1.0")
     parser.add_argument("--dataset", default="roneneldan/TinyStories")
     parser.add_argument("--dataset-samples", type=int, default=256)
-    parser.add_argument("--batch-size", type=int, choices=(1, 2), required=True)
+    parser.add_argument("--batch-size", type=int, required=True)
     parser.add_argument("--sequence-length", type=int, default=256)
     parser.add_argument("--steps", type=int, default=20)
     parser.add_argument("--warmup-steps", type=int, default=2)
@@ -27,7 +27,14 @@ def parse_args():
     parser.add_argument("--checkpoint-dir", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
-    positive = ("dataset_samples", "sequence_length", "steps", "learning_rate", "log_every")
+    positive = (
+        "dataset_samples",
+        "batch_size",
+        "sequence_length",
+        "steps",
+        "learning_rate",
+        "log_every",
+    )
     if any(getattr(args, name) <= 0 for name in positive) or args.warmup_steps < 0:
         parser.error("numeric arguments must be positive; warmup-steps may be zero")
     return args

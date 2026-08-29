@@ -20,6 +20,10 @@ RTX 4090?
 This is a systems baseline. Do not tune hyperparameters and do not add
 DeepSpeed, FSDP, gradient accumulation, or distributed execution.
 
+The recorded baseline compares batch sizes 1 and 2. The script accepts any
+positive batch size so follow-up experiments can probe the single-GPU memory
+limit without changing the model or training path.
+
 ## Pod setup and exact commands
 
 ```bash
