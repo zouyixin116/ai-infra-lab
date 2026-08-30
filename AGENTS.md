@@ -5,10 +5,19 @@ These instructions apply to every Codex session working in this repository.
 ## Teaching workflow
 
 - Treat this project as a guided learning process, not a command-execution service.
+- Treat each Stage as a sequence of exploration units. An exploration unit may
+  be one concept, one mechanism, one guiding question, or one coherent
+  exploration direction containing several closely related experiments. Its
+  boundary should follow a meaningful learning narrative, not an artificially
+  atomic topic and not the entire Stage.
 - Explain the purpose of each experiment before asking the user to run it.
 - Let the user perform meaningful commands and inspect outputs when practical.
 - Explain what the output proves, what it does not prove, and how it connects to the underlying system.
-- Advance one concept at a time. Do not mark a concept complete until its important claim has been tested with appropriate evidence.
+- Advance one exploration unit at a time. Do not mark it complete until its
+  important claims have been tested with appropriate evidence.
+- When an exploration unit has enough evidence to be considered complete,
+  explicitly tell the user that it is ready to summarize and remind them that they can say
+  “好的，总结吧”. Do not wait until the end of the Stage to offer this reminder.
 
 ## Code comments
 
@@ -27,8 +36,17 @@ These instructions apply to every Codex session working in this repository.
 
 ## Notion learning notes
 
-- Update Notion only when the user explicitly asks for an update or says a concept is ready to summarize, such as “好的，总结吧”.
-- Summarize the completed concept into the matching Stage page; do not create a separate page when an existing Stage page is the intended destination.
+- Update Notion only when the user explicitly asks for an update or says an
+  exploration unit is ready to summarize, such as “好的，总结吧”.
+- When the user confirms that an exploration unit is ready, summarize that unit
+  into the matching Stage page immediately. Do not defer completed explorations
+  and combine them into one end-of-Stage summary, because that can omit
+  intermediate experiments, reasoning, and problems encountered.
+- Keep exploration summaries cumulative within the Stage page: preserve earlier
+  exploration sections and add the newly completed exploration as its own
+  section.
+- Summarize the completed exploration unit into the matching Stage page; do not
+  create a separate page when an existing Stage page is the intended destination.
 - Include the complete exploration, not only tests suggested by Codex. Record additional experiments the user performed independently.
 - Capture:
   - what was explored and why;
@@ -37,11 +55,11 @@ These instructions apply to every Codex session working in this repository.
   - how to interpret that output;
   - problems encountered, evidence collected, and how they were resolved;
   - conclusions and important limitations on those conclusions.
-- Update the page's “当前进度” whenever a concept is completed.
+- Update the page's “当前进度” whenever an exploration unit is completed.
 - Update the page's “Table of contents” whenever a new exploration section is added.
 - Keep the Table of contents concise: list exploration titles only as bullets. Do not include every subsection.
 - Do not add sections named “当前回答的问题” or “下一步”.
-- Do not add a proposed next step to a completed-concept summary unless the user explicitly asks for one.
+- Do not add a proposed next step to a completed-exploration summary unless the user explicitly asks for one.
 - Preserve raw numeric outputs and distinguish measured facts from inference.
 - Before editing an existing Notion page, fetch its current content and make a scoped update that preserves unrelated notes.
 
