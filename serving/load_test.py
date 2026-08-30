@@ -33,6 +33,11 @@ def parse_args():
     parser.add_argument("--requests", type=int, default=100)
     parser.add_argument("--concurrency", type=int, default=1)
     parser.add_argument("--max-tokens", type=int, default=64)
+    parser.add_argument(
+        "--ignore-eos",
+        action="store_true",
+        help="Continue generation until max-tokens even if EOS is sampled.",
+    )
     parser.add_argument("--warmup-requests", type=int, default=2)
     parser.add_argument("--timeout", type=float, default=120.0)
     parser.add_argument("--output", type=Path, required=True)
@@ -65,7 +70,7 @@ def check_server(base_url, timeout):
     return [item["id"] for item in payload.get("data", [])]
 
 
-def run_request(base_url, model, prompt, max_tokens, timeout):
+def run_request(base_url, model, prompt, max_tokens, timeout, ignore_eos=False):
     """Run one streamed completion and return client-observed measurements."""
     # Usage is requested explicitly because SSE chunks are transport events:
     # one event can contain zero, one, or multiple generated tokens.
@@ -75,6 +80,7 @@ def run_request(base_url, model, prompt, max_tokens, timeout):
             "prompt": prompt,
             "max_tokens": max_tokens,
             "temperature": 0,
+            "ignore_eos": ignore_eos,
             "stream": True,
             "stream_options": {"include_usage": True},
         }
@@ -142,6 +148,7 @@ def execute(args):
             DEFAULT_PROMPTS[index % len(DEFAULT_PROMPTS)],
             args.max_tokens,
             args.timeout,
+            args.ignore_eos,
         )
 
     results = []
@@ -160,6 +167,7 @@ def execute(args):
                 DEFAULT_PROMPTS[index % len(DEFAULT_PROMPTS)],
                 args.max_tokens,
                 args.timeout,
+                args.ignore_eos,
             ): index
             for index in range(args.requests)
         }
@@ -207,6 +215,7 @@ def execute(args):
             "requests": args.requests,
             "concurrency": args.concurrency,
             "max_tokens": args.max_tokens,
+            "ignore_eos": args.ignore_eos,
             "warmup_requests": args.warmup_requests,
             "timeout_seconds": args.timeout,
             "streaming": True,

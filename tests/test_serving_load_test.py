@@ -72,6 +72,7 @@ class ExecuteTest(unittest.TestCase):
                     requests=4,
                     concurrency=2,
                     max_tokens=3,
+                    ignore_eos=False,
                     warmup_requests=1,
                     timeout=2.0,
                     output=Path(directory) / "unused.json",
