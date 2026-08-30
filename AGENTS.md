@@ -48,6 +48,12 @@ These instructions apply to every Codex session working in this repository.
 - Summarize the completed exploration unit into the matching Stage page; do not
   create a separate page when an existing Stage page is the intended destination.
 - Include the complete exploration, not only tests suggested by Codex. Record additional experiments the user performed independently.
+- Include relevant knowledge that emerges during the exploration even when it
+  was not part of the original experiment plan. This includes the user's
+  follow-up questions, independently raised observations, conceptual side
+  questions, and any detail the user explicitly asks to “记下来”. Integrate
+  each item into the section where it supports the learning narrative instead
+  of dropping it merely because it was not a benchmark step.
 - Capture:
   - what was explored and why;
   - commands or code that materially contributed to the exploration;

@@ -17,10 +17,10 @@ completeness.
   candidate**, or **theory-only / out of scope**. The default is to continue
   BFS without expanding the stack.
 
-Stages 0 through 2 are implemented: the environment/benchmark harness, a
-single-GPU training baseline, and a multi-GPU DDP baseline. Stage 3, a vLLM
-serving baseline, is in progress. No benchmark numbers are committed unless
-they were produced by an actual run.
+Stages 0 through 3 are implemented: the environment/benchmark harness, a
+single-GPU training baseline, a multi-GPU DDP baseline, and a vLLM serving and
+load baseline. No benchmark numbers are committed unless they were produced by
+an actual run.
 
 ## Repository layout
 
@@ -145,16 +145,22 @@ CUDA_VISIBLE_DEVICES=0 vllm serve TinyLlama/TinyLlama-1.1B-Chat-v1.0 \
   --dtype bfloat16 --seed 42 --host 0.0.0.0 --port 8000
 ```
 
-In another shell, establish the serial streaming baseline:
+In another shell, establish the serial streaming baseline and then increase
+concurrency:
 
 ```bash
 python serving/load_test.py --concurrency 1 \
   --output results/stage3_c1.json
+python serving/load_test.py --concurrency 4 \
+  --output results/stage3_c4.json
+python serving/load_test.py --concurrency 16 \
+  --output results/stage3_c16.json
 ```
 
 The JSON reports streaming time to first token, end-to-end latency, request
 throughput, output-token throughput, success rate, and individual request
-measurements. First verify service correctness and understand these metrics at
-concurrency 1. Concurrency experiments come only after that baseline has real
-GPU evidence. See [experiments/stage3-vllm-serving.md](experiments/stage3-vllm-serving.md)
-for the current experiment definition and evidence boundary.
+measurements. The measured sweep found increasing throughput with a
+throughput/latency knee around concurrency 32-64 and client/server degradation
+between concurrency 128 and 256. See
+[experiments/stage3-vllm-serving.md](experiments/stage3-vllm-serving.md) for the
+commands, raw metrics, interpretation, and evidence boundaries.
