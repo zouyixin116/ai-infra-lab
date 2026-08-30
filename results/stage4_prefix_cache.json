@@ -1,0 +1,60 @@
+{
+  "captured_at_utc": "2026-08-30T20:45:19.411084+00:00",
+  "server": "http://127.0.0.1:8000",
+  "model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "configuration": {
+    "marker": "stage4-prefix-cache-720a743d-e010-4421-ba77-2c29a1496992",
+    "repetitions": 80,
+    "prompt_characters": 5696,
+    "max_tokens": 1,
+    "temperature": 0
+  },
+  "before": {
+    "queries": 42483.0,
+    "hits": 1056.0,
+    "local_compute": 41427.0,
+    "local_cache_hit": 1056.0,
+    "cached": 1056.0
+  },
+  "first_request": {
+    "latency_seconds": 0.04895084910094738,
+    "usage": {
+      "prompt_tokens": 1093,
+      "total_tokens": 1094,
+      "completion_tokens": 1,
+      "prompt_tokens_details": null,
+      "completion_tokens_details": null
+    }
+  },
+  "first_request_delta": {
+    "cached": 0.0,
+    "hits": 0.0,
+    "local_cache_hit": 0.0,
+    "local_compute": 1093.0,
+    "queries": 1093.0
+  },
+  "second_request": {
+    "latency_seconds": 0.024595550959929824,
+    "usage": {
+      "prompt_tokens": 1093,
+      "total_tokens": 1094,
+      "completion_tokens": 1,
+      "prompt_tokens_details": null,
+      "completion_tokens_details": null
+    }
+  },
+  "second_request_delta": {
+    "cached": 1088.0,
+    "hits": 1088.0,
+    "local_cache_hit": 1088.0,
+    "local_compute": 5.0,
+    "queries": 1093.0
+  },
+  "after_second": {
+    "queries": 44669.0,
+    "hits": 2144.0,
+    "local_compute": 42525.0,
+    "local_cache_hit": 2144.0,
+    "cached": 2144.0
+  }
+}

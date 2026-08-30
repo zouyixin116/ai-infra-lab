@@ -1,0 +1,478 @@
+{
+  "captured_at_utc": "2026-08-30T19:43:26.580738+00:00",
+  "server": "http://127.0.0.1:8000",
+  "model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "configuration": {
+    "requests": 64,
+    "concurrency": 64,
+    "max_tokens": 512,
+    "warmup_requests": 0,
+    "timeout_seconds": 180.0,
+    "streaming": true,
+    "temperature": 0
+  },
+  "metrics": {
+    "successful_requests": 64,
+    "failed_requests": 0,
+    "success_rate": 1.0,
+    "wall_time_seconds": 1.941884,
+    "request_throughput_per_second": 32.957682,
+    "output_tokens": 20491,
+    "output_tokens_per_second": 10552.122755,
+    "ttft_ms_p50": 104.554,
+    "ttft_ms_p95": 115.641,
+    "latency_ms_p50": 1056.811,
+    "latency_ms_p95": 1908.768
+  },
+  "requests": [
+    {
+      "latency_seconds": 1.913714491063729,
+      "ttft_seconds": 0.08044684515334666,
+      "completion_tokens": 512,
+      "chunks": 470,
+      "request_index": 0
+    },
+    {
+      "latency_seconds": 0.5773609359748662,
+      "ttft_seconds": 0.09643900697119534,
+      "completion_tokens": 129,
+      "chunks": 119,
+      "request_index": 1
+    },
+    {
+      "latency_seconds": 1.6091178881470114,
+      "ttft_seconds": 0.0954908630810678,
+      "completion_tokens": 424,
+      "chunks": 387,
+      "request_index": 2
+    },
+    {
+      "latency_seconds": 0.5848989409860224,
+      "ttft_seconds": 0.09491812600754201,
+      "completion_tokens": 132,
+      "chunks": 122,
+      "request_index": 3
+    },
+    {
+      "latency_seconds": 0.8359779592137784,
+      "ttft_seconds": 0.09403611510060728,
+      "completion_tokens": 195,
+      "chunks": 177,
+      "request_index": 4
+    },
+    {
+      "latency_seconds": 0.72197070508264,
+      "ttft_seconds": 0.09327716706320643,
+      "completion_tokens": 164,
+      "chunks": 148,
+      "request_index": 5
+    },
+    {
+      "latency_seconds": 1.9102525669150054,
+      "ttft_seconds": 0.09199390304274857,
+      "completion_tokens": 512,
+      "chunks": 469,
+      "request_index": 6
+    },
+    {
+      "latency_seconds": 1.9091372990515083,
+      "ttft_seconds": 0.09097122889943421,
+      "completion_tokens": 512,
+      "chunks": 469,
+      "request_index": 7
+    },
+    {
+      "latency_seconds": 1.9091884850058705,
+      "ttft_seconds": 0.09019849495962262,
+      "completion_tokens": 512,
+      "chunks": 469,
+      "request_index": 8
+    },
+    {
+      "latency_seconds": 0.563081257045269,
+      "ttft_seconds": 0.08887886092998087,
+      "completion_tokens": 129,
+      "chunks": 119,
+      "request_index": 9
+    },
+    {
+      "latency_seconds": 1.6042493979912251,
+      "ttft_seconds": 0.0876984300557524,
+      "completion_tokens": 424,
+      "chunks": 387,
+      "request_index": 10
+    },
+    {
+      "latency_seconds": 0.5754957869648933,
+      "ttft_seconds": 0.08755183406174183,
+      "completion_tokens": 132,
+      "chunks": 122,
+      "request_index": 11
+    },
+    {
+      "latency_seconds": 0.8321307499427348,
+      "ttft_seconds": 0.08666411298327148,
+      "completion_tokens": 195,
+      "chunks": 177,
+      "request_index": 12
+    },
+    {
+      "latency_seconds": 0.6807673638686538,
+      "ttft_seconds": 0.10060027684085071,
+      "completion_tokens": 153,
+      "chunks": 139,
+      "request_index": 13
+    },
+    {
+      "latency_seconds": 1.906677579972893,
+      "ttft_seconds": 0.10012683691456914,
+      "completion_tokens": 512,
+      "chunks": 469,
+      "request_index": 14
+    },
+    {
+      "latency_seconds": 0.8771960488520563,
+      "ttft_seconds": 0.09897879580967128,
+      "completion_tokens": 209,
+      "chunks": 190,
+      "request_index": 15
+    },
+    {
+      "latency_seconds": 1.9038987311068922,
+      "ttft_seconds": 0.09828902804292738,
+      "completion_tokens": 512,
+      "chunks": 469,
+      "request_index": 16
+    },
+    {
+      "latency_seconds": 0.5632798199076205,
+      "ttft_seconds": 0.09751308802515268,
+      "completion_tokens": 129,
+      "chunks": 119,
+      "request_index": 17
+    },
+    {
+      "latency_seconds": 1.2919848670717329,
+      "ttft_seconds": 0.09602286387234926,
+      "completion_tokens": 335,
+      "chunks": 303,
+      "request_index": 18
+    },
+    {
+      "latency_seconds": 0.5713001620024443,
+      "ttft_seconds": 0.0946430480107665,
+      "completion_tokens": 132,
+      "chunks": 122,
+      "request_index": 19
+    },
+    {
+      "latency_seconds": 0.823895504930988,
+      "ttft_seconds": 0.09634933900088072,
+      "completion_tokens": 195,
+      "chunks": 177,
+      "request_index": 20
+    },
+    {
+      "latency_seconds": 0.6732488460838795,
+      "ttft_seconds": 0.10396710294298828,
+      "completion_tokens": 153,
+      "chunks": 139,
+      "request_index": 21
+    },
+    {
+      "latency_seconds": 1.9032386378385127,
+      "ttft_seconds": 0.10366566479206085,
+      "completion_tokens": 512,
+      "chunks": 469,
+      "request_index": 22
+    },
+    {
+      "latency_seconds": 1.2364260421600193,
+      "ttft_seconds": 0.10215143603272736,
+      "completion_tokens": 319,
+      "chunks": 288,
+      "request_index": 23
+    },
+    {
+      "latency_seconds": 1.9014413468539715,
+      "ttft_seconds": 0.10119128902442753,
+      "completion_tokens": 512,
+      "chunks": 469,
+      "request_index": 24
+    },
+    {
+      "latency_seconds": 0.5557178210001439,
+      "ttft_seconds": 0.10044517600908875,
+      "completion_tokens": 129,
+      "chunks": 119,
+      "request_index": 25
+    },
+    {
+      "latency_seconds": 1.9008474799338728,
+      "ttft_seconds": 0.10101611888967454,
+      "completion_tokens": 512,
+      "chunks": 469,
+      "request_index": 26
+    },
+    {
+      "latency_seconds": 0.5656826919876039,
+      "ttft_seconds": 0.1000213180668652,
+      "completion_tokens": 132,
+      "chunks": 121,
+      "request_index": 27
+    },
+    {
+      "latency_seconds": 0.8040467251557857,
+      "ttft_seconds": 0.09814101899974048,
+      "completion_tokens": 190,
+      "chunks": 172,
+      "request_index": 28
+    },
+    {
+      "latency_seconds": 0.66666140104644,
+      "ttft_seconds": 0.0975234869401902,
+      "completion_tokens": 153,
+      "chunks": 139,
+      "request_index": 29
+    },
+    {
+      "latency_seconds": 1.9000579039566219,
+      "ttft_seconds": 0.11692059691995382,
+      "completion_tokens": 512,
+      "chunks": 469,
+      "request_index": 30
+    },
+    {
+      "latency_seconds": 1.8986965920776129,
+      "ttft_seconds": 0.11506235995329916,
+      "completion_tokens": 512,
+      "chunks": 469,
+      "request_index": 31
+    },
+    {
+      "latency_seconds": 1.8977269178722054,
+      "ttft_seconds": 0.11578839598223567,
+      "completion_tokens": 512,
+      "chunks": 469,
+      "request_index": 32
+    },
+    {
+      "latency_seconds": 0.6002100110054016,
+      "ttft_seconds": 0.11458395002409816,
+      "completion_tokens": 139,
+      "chunks": 127,
+      "request_index": 33
+    },
+    {
+      "latency_seconds": 1.895794620970264,
+      "ttft_seconds": 0.11220780806615949,
+      "completion_tokens": 512,
+      "chunks": 469,
+      "request_index": 34
+    },
+    {
+      "latency_seconds": 1.8955062490422279,
+      "ttft_seconds": 0.11146443011239171,
+      "completion_tokens": 512,
+      "chunks": 469,
+      "request_index": 35
+    },
+    {
+      "latency_seconds": 0.8066155689302832,
+      "ttft_seconds": 0.11204736703075469,
+      "completion_tokens": 191,
+      "chunks": 173,
+      "request_index": 36
+    },
+    {
+      "latency_seconds": 0.6268770089372993,
+      "ttft_seconds": 0.11178599391132593,
+      "completion_tokens": 142,
+      "chunks": 130,
+      "request_index": 37
+    },
+    {
+      "latency_seconds": 1.8976381609681994,
+      "ttft_seconds": 0.1158884740434587,
+      "completion_tokens": 512,
+      "chunks": 469,
+      "request_index": 38
+    },
+    {
+      "latency_seconds": 1.8959813928231597,
+      "ttft_seconds": 0.11574288993142545,
+      "completion_tokens": 512,
+      "chunks": 469,
+      "request_index": 39
+    },
+    {
+      "latency_seconds": 1.8957651858218014,
+      "ttft_seconds": 0.1141685878392309,
+      "completion_tokens": 512,
+      "chunks": 469,
+      "request_index": 40
+    },
+    {
+      "latency_seconds": 0.5481461130548269,
+      "ttft_seconds": 0.11401788517832756,
+      "completion_tokens": 129,
+      "chunks": 119,
+      "request_index": 41
+    },
+    {
+      "latency_seconds": 1.8347620679996908,
+      "ttft_seconds": 0.11373208719305694,
+      "completion_tokens": 496,
+      "chunks": 454,
+      "request_index": 42
+    },
+    {
+      "latency_seconds": 1.8931369511410594,
+      "ttft_seconds": 0.11356788803823292,
+      "completion_tokens": 512,
+      "chunks": 469,
+      "request_index": 43
+    },
+    {
+      "latency_seconds": 0.8057866799645126,
+      "ttft_seconds": 0.11161691695451736,
+      "completion_tokens": 192,
+      "chunks": 174,
+      "request_index": 44
+    },
+    {
+      "latency_seconds": 0.6311238210182637,
+      "ttft_seconds": 0.11396378302015364,
+      "completion_tokens": 142,
+      "chunks": 130,
+      "request_index": 45
+    },
+    {
+      "latency_seconds": 1.892317800084129,
+      "ttft_seconds": 0.11365892901085317,
+      "completion_tokens": 512,
+      "chunks": 469,
+      "request_index": 46
+    },
+    {
+      "latency_seconds": 0.681312148924917,
+      "ttft_seconds": 0.11366956890560687,
+      "completion_tokens": 157,
+      "chunks": 141,
+      "request_index": 47
+    },
+    {
+      "latency_seconds": 1.890147655038163,
+      "ttft_seconds": 0.11391740501858294,
+      "completion_tokens": 512,
+      "chunks": 469,
+      "request_index": 48
+    },
+    {
+      "latency_seconds": 0.6014797100797296,
+      "ttft_seconds": 0.11343321413733065,
+      "completion_tokens": 139,
+      "chunks": 127,
+      "request_index": 49
+    },
+    {
+      "latency_seconds": 1.3027808708138764,
+      "ttft_seconds": 0.11302841291762888,
+      "completion_tokens": 342,
+      "chunks": 309,
+      "request_index": 50
+    },
+    {
+      "latency_seconds": 1.8888667861465365,
+      "ttft_seconds": 0.11235237098298967,
+      "completion_tokens": 512,
+      "chunks": 469,
+      "request_index": 51
+    },
+    {
+      "latency_seconds": 0.8091335869394243,
+      "ttft_seconds": 0.10938194091431797,
+      "completion_tokens": 195,
+      "chunks": 176,
+      "request_index": 52
+    },
+    {
+      "latency_seconds": 0.6223115189932287,
+      "ttft_seconds": 0.10790375992655754,
+      "completion_tokens": 142,
+      "chunks": 130,
+      "request_index": 53
+    },
+    {
+      "latency_seconds": 1.8868288309313357,
+      "ttft_seconds": 0.11015123897232115,
+      "completion_tokens": 512,
+      "chunks": 469,
+      "request_index": 54
+    },
+    {
+      "latency_seconds": 0.6712562271859497,
+      "ttft_seconds": 0.10780581622384489,
+      "completion_tokens": 157,
+      "chunks": 141,
+      "request_index": 55
+    },
+    {
+      "latency_seconds": 1.8849001820199192,
+      "ttft_seconds": 0.10611094697378576,
+      "completion_tokens": 512,
+      "chunks": 469,
+      "request_index": 56
+    },
+    {
+      "latency_seconds": 0.5918255639262497,
+      "ttft_seconds": 0.10514136194251478,
+      "completion_tokens": 139,
+      "chunks": 127,
+      "request_index": 57
+    },
+    {
+      "latency_seconds": 1.2979442300274968,
+      "ttft_seconds": 0.10529804695397615,
+      "completion_tokens": 342,
+      "chunks": 309,
+      "request_index": 58
+    },
+    {
+      "latency_seconds": 1.8837969759479165,
+      "ttft_seconds": 0.10854942491278052,
+      "completion_tokens": 512,
+      "chunks": 469,
+      "request_index": 59
+    },
+    {
+      "latency_seconds": 0.8061412558890879,
+      "ttft_seconds": 0.10566403483971953,
+      "completion_tokens": 195,
+      "chunks": 176,
+      "request_index": 60
+    },
+    {
+      "latency_seconds": 0.6155703240074217,
+      "ttft_seconds": 0.10560930310748518,
+      "completion_tokens": 142,
+      "chunks": 130,
+      "request_index": 61
+    },
+    {
+      "latency_seconds": 1.880545858060941,
+      "ttft_seconds": 0.10343649401329458,
+      "completion_tokens": 512,
+      "chunks": 469,
+      "request_index": 62
+    },
+    {
+      "latency_seconds": 0.6692094751633704,
+      "ttft_seconds": 0.10184439807198942,
+      "completion_tokens": 157,
+      "chunks": 141,
+      "request_index": 63
+    }
+  ],
+  "errors": []
+}

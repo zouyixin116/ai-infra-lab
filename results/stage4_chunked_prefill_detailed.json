@@ -1,0 +1,44 @@
+{
+  "captured_at_utc": "2026-08-30T21:43:59.729352+00:00",
+  "server": "http://127.0.0.1:8000",
+  "model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "configuration": {
+    "marker": "stage4-chunked-prefill-e8c7d40b-75df-4131-97be-d5cf66b0d0e8",
+    "repetitions": 80,
+    "prompt_characters": 6077,
+    "max_tokens": 1,
+    "temperature": 0
+  },
+  "request": {
+    "latency_seconds": 0.16004576603882015,
+    "usage": {
+      "prompt_tokens": 1089,
+      "total_tokens": 1090,
+      "completion_tokens": 1,
+      "prompt_tokens_details": null,
+      "completion_tokens_details": null
+    }
+  },
+  "metrics_delta": {
+    "prompt_tokens": 1089.0,
+    "generation_tokens": 1.0,
+    "iteration_count": 1.0,
+    "iteration_tokens": 1090.0,
+    "iteration_buckets": {
+      "1.0": 0.0,
+      "8.0": 0.0,
+      "16.0": 0.0,
+      "32.0": 0.0,
+      "64.0": 0.0,
+      "128.0": 0.0,
+      "256.0": 0.0,
+      "512.0": 0.0,
+      "1024.0": 0.0,
+      "2048.0": 1.0,
+      "4096.0": 1.0,
+      "8192.0": 1.0,
+      "16384.0": 1.0,
+      "+Inf": 1.0
+    }
+  }
+}
