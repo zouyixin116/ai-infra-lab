@@ -13,6 +13,8 @@ from pathlib import Path
 
 
 DEFAULT_PROMPTS = (
+    # Reuse a fixed prompt set so concurrency is the main experimental variable.
+    # Round-robin selection also prevents every request from sharing one prefix.
     "Once upon a time, a small robot discovered",
     "Explain why the sky appears blue in simple terms:",
     "Write a short story about a brave mouse:",
@@ -54,6 +56,9 @@ def percentile(values, quantile):
 
 
 def check_server(base_url, timeout):
+    """Return model IDs advertised by the server's discovery endpoint."""
+    # Fail before warmup if the HTTP service is unavailable or the requested
+    # model name cannot be used by the completions endpoint.
     request = urllib.request.Request(base_url.rstrip("/") + "/v1/models")
     with urllib.request.urlopen(request, timeout=timeout) as response:
         payload = json.loads(response.read().decode("utf-8"))
@@ -61,6 +66,9 @@ def check_server(base_url, timeout):
 
 
 def run_request(base_url, model, prompt, max_tokens, timeout):
+    """Run one streamed completion and return client-observed measurements."""
+    # Usage is requested explicitly because SSE chunks are transport events:
+    # one event can contain zero, one, or multiple generated tokens.
     body = json.dumps(
         {
             "model": model,
@@ -89,11 +97,16 @@ def run_request(base_url, model, prompt, max_tokens, timeout):
             if not line.startswith("data: ") or line == "data: [DONE]":
                 continue
             event = json.loads(line[6:])
+            # Example payload: {"choices": [{"text": "Once"}]}. The text is
+            # an incremental fragment and does not define a one-token boundary.
             choices = event.get("choices") or []
             if choices and choices[0].get("text"):
                 chunks += 1
                 if first_token_at is None:
                     first_token_at = time.perf_counter()
+            # vLLM sends the final token count in a usage event near the end of
+            # the stream. This is authoritative for output-token throughput.
+            # Example: {"choices": [], "usage": {"completion_tokens": 64}}
             usage = event.get("usage")
             if usage and usage.get("completion_tokens") is not None:
                 completion_tokens = int(usage["completion_tokens"])
@@ -111,6 +124,7 @@ def run_request(base_url, model, prompt, max_tokens, timeout):
 
 
 def execute(args):
+    """Run warmup and measured workloads, then build the benchmark report."""
     available_models = check_server(args.base_url, args.timeout)
     if args.model not in available_models:
         raise RuntimeError(
@@ -119,6 +133,8 @@ def execute(args):
             )
         )
 
+    # Warmup requests exercise lazy server work before timing. They remain
+    # serial and are intentionally excluded from every reported metric.
     for index in range(args.warmup_requests):
         run_request(
             args.base_url,
@@ -133,6 +149,8 @@ def execute(args):
     # Measure the whole submitted workload once. Summing per-request latency
     # would double-count overlap when a later experiment raises concurrency.
     wall_started = time.perf_counter()
+    # Each worker owns one blocking HTTP stream. The worker count therefore
+    # bounds client-side in-flight requests without requiring an async library.
     with concurrent.futures.ThreadPoolExecutor(max_workers=args.concurrency) as pool:
         future_to_index = {
             pool.submit(
@@ -145,6 +163,8 @@ def execute(args):
             ): index
             for index in range(args.requests)
         }
+        # Completion order differs under concurrency, so retain request_index
+        # and restore submission order before writing reproducible raw output.
         for future in concurrent.futures.as_completed(future_to_index):
             index = future_to_index[future]
             try:
@@ -159,6 +179,8 @@ def execute(args):
     latencies = [item["latency_seconds"] for item in results]
     ttfts = [item["ttft_seconds"] for item in results]
     total_tokens = sum(item["completion_tokens"] for item in results)
+    # Throughput uses the shared workload wall time, whereas latency percentiles
+    # describe individual requests. They answer different serving questions.
     metrics = {
         "successful_requests": len(results),
         "failed_requests": len(errors),
@@ -205,6 +227,7 @@ def main():
         return 1
     rendered = json.dumps(report, indent=2)
     print(rendered)
+    # Write failed-request reports too, so partial runs retain diagnostic evidence.
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(rendered + "\n", encoding="utf-8")
     return 0 if report["metrics"]["failed_requests"] == 0 else 1
