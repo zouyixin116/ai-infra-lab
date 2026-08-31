@@ -40,7 +40,8 @@ def main() -> None:
         # Row parallelism consumes matching input and weight shards on each rank.
         input_shard = x_cpu.chunk(world_size, dim=1)[rank].to(device)
         row_shard = weight_cpu.chunk(world_size, dim=0)[rank].to(device)
-        row_output = input_shard @ row_shard
+        row_partial_output = input_shard @ row_shard
+        row_output = row_partial_output.clone()
         # Each rank computed a partial sum; NCCL combines it into the complete output.
         dist.all_reduce(row_output, op=dist.ReduceOp.SUM)
 
@@ -57,6 +58,11 @@ def main() -> None:
                     f"column_local_output={tuple(local_column_output.shape)}, "
                     f"row_input_shard={tuple(input_shard.shape)}, "
                     f"row_weight_shard={tuple(row_shard.shape)}",
+                    flush=True,
+                )
+                print(
+                    f"rank={rank}, row_partial_output_before_all_reduce=\n"
+                    f"{row_partial_output.cpu()}",
                     flush=True,
                 )
 
