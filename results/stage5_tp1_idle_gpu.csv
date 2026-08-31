@@ -1,0 +1,3 @@
+index, name, memory.used [MiB], memory.free [MiB], utilization.gpu [%]
+0, NVIDIA A100-SXM4-80GB, 72795 MiB, 8357 MiB, 0 %
+1, NVIDIA A100-SXM4-80GB, 0 MiB, 81152 MiB, 0 %
