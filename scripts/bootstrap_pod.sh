@@ -28,6 +28,10 @@ else
     echo "GitHub CLI is already installed: $(gh --version | head -n 1)"
 fi
 
+# Configure the commit identity used by fresh Pods.
+git config --global user.email "sz.yixinzou@gmail.com"
+git config --global user.name "Yixin Zou"
+
 if ! gh auth status --hostname github.com >/dev/null 2>&1; then
     # Device login keeps credentials out of the repository and shell history.
     echo "GitHub authentication is required. Complete the device flow in your browser."
